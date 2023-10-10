@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        hero: "url(./src/assets/neon-light-min.jpg)",
+        "footer-texture": "url('/img/footer-texture.png')",
+      },
+    },
   },
   plugins: [],
 };
