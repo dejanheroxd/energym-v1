@@ -10,10 +10,9 @@ body {
   color: #c70050;
 }
 
-.scroll-hidden {
+.no-scroll {
   overflow: hidden;
 }
-
 .burger {
   width: 100%;
 }

@@ -5,6 +5,12 @@ import { AnimatePresence, motion } from "framer-motion";
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
 
+  function onNavActive() {
+    setNavActive((prev) => !prev);
+
+    document.body.classList.toggle("no-scroll", !navActive);
+  }
+
   function activateNav() {
     setNavActive(true);
   }
@@ -74,16 +80,12 @@ function Navbar() {
     },
   };
 
-  function onNavActive() {
-    setNavActive((prev) => !prev);
-  }
-
   return (
     <header className="h-16 flex items-center fixed top-0 left-0 right-0 z-50 bg-white sm:flex sm:justify-between sm:h-20 sm:px-2  sm:items-center">
       <Link to="/">
         <p
           className="font-bold text-2xl pl-3 fixed top-4 z-50"
-          onClick={() => setNavActive(false)}
+          onClick={() => onNavActive()}
         >
           ENERGYM
         </p>
