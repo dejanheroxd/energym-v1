@@ -3,10 +3,14 @@ import joggingMan from "../../assets/jogging-man-neon.jpg";
 
 function MotivationalBanner() {
   return (
-    <div className="h-screen">
+    <div className="h-screen ">
       <div>
-        <div className="h-96 ">
-          <img className="object-cover h-full w-full" src={joggingMan} alt="" />
+        <div className="h-96 overflow-hidden">
+          <img
+            className="object-cover scale-[1.43] h-full w-full"
+            src={joggingMan}
+            alt=""
+          />
         </div>
         <div className="text-center pb-4 border h-96 flex flex-col justify-center px-4 items-center">
           <p className="font-semibold text-2xl">The Onyx Experience</p>
