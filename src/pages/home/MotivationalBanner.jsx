@@ -10,12 +10,12 @@ function MotivationalBanner() {
         <div>
           <div className="h-96 overflow-hidden">
             <img
-              className="object-cover scale-[1.23] h-full w-full hidden sm:block"
+              className="object-cover h-full w-full hidden sm:block"
               src={joggingManDesktop} // Default image for PC
               alt=""
             />
             <img
-              className="object-cover scale-[1.23] h-full w-full sm:hidden"
+              className="object-cover h-full w-full sm:hidden"
               src={joggingManMobile} // Mobile image
               alt=""
             />
