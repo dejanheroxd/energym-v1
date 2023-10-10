@@ -5,7 +5,7 @@ import manWoman from "../../assets/man-woman-min.jpg";
 function MotivationalBanner() {
   return (
     <>
-      <div className="h-screen ">
+      <div className="h-[770px]">
         <div>
           <div className="h-96 overflow-hidden">
             <img
@@ -23,7 +23,7 @@ function MotivationalBanner() {
           </div>
         </div>
       </div>
-      <div className="h-screen pt-7">
+      <div className="h-[770px]">
         <div>
           <div className="h-96 overflow-hidden">
             <img
