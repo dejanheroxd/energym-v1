@@ -33,7 +33,7 @@ function MotivationalBanner() {
         <div>
           <div className="h-96 overflow-hidden">
             <img
-              className="object-cover scale-[1.43] h-full w-full"
+              className="object-cover scale-[1.43] -translate-x-[35px] hue-rotate-[340deg] h-full w-full"
               src={manWoman}
               alt=""
             />
@@ -43,7 +43,7 @@ function MotivationalBanner() {
             <p className="mt-5">
               {`We passionately believe that fitness is a journey meant for everyone. Whether you're an experienced athlete or taking your first steps towards a healthier lifestyle, our gym welcomes individuals of all backgrounds and fitness levels.`}
             </p>
-            <Button className="border">Learn More</Button>
+            <Button className="border">Reserve a Spot</Button>
           </div>
         </div>
       </div>
