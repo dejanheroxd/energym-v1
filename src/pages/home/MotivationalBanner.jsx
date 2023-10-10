@@ -1,5 +1,5 @@
 import Button from "../../components/Button";
-import joggingMan from "../../assets/jogging-man-neon-min.jpg";
+import joggingMan from "../../assets/jogging-man-neon-cop-min.jpg";
 import manWoman from "../../assets/man-woman-min.jpg";
 
 function MotivationalBanner() {
