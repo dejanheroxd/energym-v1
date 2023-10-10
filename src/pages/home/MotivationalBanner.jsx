@@ -1,5 +1,6 @@
 import Button from "../../components/Button";
-// import joggingMan from "../../assets/jogging-man-neon-cop-min.jpg";
+import joggingManDesktop from "../../assets/jogging-man-neon-cop-min.jpg";
+import joggingManMobile from "../../assets/jogging-man-neon-short-min.jpg";
 import manWoman from "../../assets/man-woman-min.jpg";
 
 function MotivationalBanner() {
@@ -10,12 +11,12 @@ function MotivationalBanner() {
           <div className="h-96 overflow-hidden">
             <img
               className="object-cover scale-[1.43] h-full w-full hidden sm:block"
-              src="../src/assets/jogging-man-neon-cop-min.jpg" // Default image for PC
+              src={joggingManDesktop} // Default image for PC
               alt=""
             />
             <img
               className="object-cover scale-[1.43] h-full w-full sm:hidden"
-              src="../src/assets/jogging-man-neon-short-min.jpg" // Mobile image
+              src={joggingManMobile} // Mobile image
               alt=""
             />
           </div>
