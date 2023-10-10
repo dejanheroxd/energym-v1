@@ -1,5 +1,3 @@
-import Button from "../../components/Button";
-
 function HeroSection() {
   return (
     <div className="relative justify-center items-center h-[86vh] w-screen flex-row flex bg-woman">
