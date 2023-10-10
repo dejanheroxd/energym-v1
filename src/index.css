@@ -3,9 +3,40 @@
 @tailwind utilities;
 
 body {
-  overflow: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
 .active {
   color: rgb(196, 48, 107);
+}
+
+.burger {
+  width: 100%;
+}
+
+.burger::after,
+.burger::before {
+  content: "";
+  display: block;
+  width: 40%;
+  background-color: black;
+  height: 4px;
+  margin: auto;
+  z-index: 1000;
+}
+
+.burger::after {
+  top: -5px;
+}
+
+.burger::before {
+  top: 5px;
+}
+
+.bg-woman {
+  background-image: url("../src/assets/neon-light-min.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 93vh;
 }
