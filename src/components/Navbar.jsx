@@ -79,7 +79,7 @@ function Navbar() {
   }
 
   return (
-    <header className="h-16 flex items-center bg-white sm:flex sm:justify-between sm:h-20 sm:px-2  sm:items-center">
+    <header className="h-16 flex items-center fixed top-0 left-0 right-0 z-40 bg-white sm:flex sm:justify-between sm:h-20 sm:px-2  sm:items-center">
       <Link to="/">
         <p className="font-bold text-2xl pl-3">ENERGYM</p>
       </Link>
