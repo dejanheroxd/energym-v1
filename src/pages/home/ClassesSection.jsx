@@ -10,7 +10,7 @@ function ClassesSection() {
           classes to suit your goals and preferences. From high-energy cardio to
           mindful yoga, we've got you covered.`}
         </p>
-        <img src={womanMatt} alt="" />
+        <img loading="lazy" className="h-60 w-96" src={womanMatt} alt="" />
         <button className="mt-9 text-black text-sm px-10 py-4 rounded-full bg-white">
           View All
         </button>

@@ -10,6 +10,7 @@ function MotivationalBanner() {
         <div>
           <div className="h-96 overflow-hidden">
             <img
+              loading="lazy"
               className="object-cover h-full w-full hidden sm:block"
               src={joggingManDesktop} // Default image for PC
               alt=""
@@ -33,6 +34,7 @@ function MotivationalBanner() {
         <div>
           <div className="h-96 overflow-hidden">
             <img
+              loading="lazy"
               className="object-cover scale-[1.43] -translate-x-[35px] hue-rotate-[340deg] h-full w-full"
               src={manWoman}
               alt=""
