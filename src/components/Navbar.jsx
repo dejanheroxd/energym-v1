@@ -79,23 +79,23 @@ function Navbar() {
   }
 
   return (
-    <header className="h-14 flex items-center bg-white sm:flex sm:justify-between sm:h-20 sm:px-2  sm:items-center">
+    <header className="h-16 flex items-center bg-white sm:flex sm:justify-between sm:h-20 sm:px-2  sm:items-center">
       <Link to="/">
-        <p className="font-bold text-xl pl-2">ENERGYM</p>
+        <p className="font-bold text-2xl pl-3">ENERGYM</p>
       </Link>
       <button
         onClick={() => onNavActive()}
-        className="absolute top-[23px] right-3 z-50 sm:hidden"
+        className="absolute top-[27px] right-4 z-50 sm:hidden"
       >
         <div>
           <span
-            className={`bg-black h-[3px] duration-300  w-6 block mb-1 ${
+            className={`bg-black h-[3px] duration-300  w-7 block mb-1 ${
               navActive ? "rotate-45 translate-y-1" : ""
             }`}
           ></span>
 
           <span
-            className={`bg-black h-[3px] duration-300  w-6 block ${
+            className={`bg-black h-[3px] duration-300  w-7 block ${
               navActive ? "-rotate-45 translate-y-[-3px]" : ""
             }`}
           ></span>
