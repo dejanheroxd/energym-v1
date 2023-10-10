@@ -3,7 +3,7 @@
 function Home() {
   return (
     <>
-      <div className="relative justify-center items-center h-screen w-screen flex-row flex bg-woman">
+      <div className="relative justify-center items-center h-[85vh] w-screen flex-row flex bg-woman">
         <div className=" h-96 w-80 text-center">
           <h1 className="text-white font-semibold text-5xl">
             Welcome to Energym
