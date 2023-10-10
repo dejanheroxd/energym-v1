@@ -35,8 +35,7 @@ body {
 
 .bg-woman {
   background-image: url("../src/assets/neon-light-min.jpg");
-  background-size: fill;
+  background-size: cover;
   background-position: 40% center;
   background-repeat: no-repeat;
-  min-height: 93vh;
 }

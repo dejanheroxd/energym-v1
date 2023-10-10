@@ -121,22 +121,33 @@ function Navbar() {
               >
                 <div className="overflow-hidden">
                   <motion.li variants={mobileLinksVars}>
-                    <NavLink to="about">ABOUT</NavLink>
+                    <NavLink onClick={() => setNavActive(false)} to="about">
+                      ABOUT
+                    </NavLink>
                   </motion.li>
                 </div>
                 <div className="overflow-hidden">
                   <motion.li variants={mobileLinksVars}>
-                    <NavLink to="services">SERVICES</NavLink>
+                    <NavLink onClick={() => setNavActive(false)} to="services">
+                      SERVICES
+                    </NavLink>
                   </motion.li>
                 </div>
                 <div className="overflow-hidden">
                   <motion.li variants={mobileLinksVars}>
-                    <NavLink to="membership">MEMBERSHIP</NavLink>
+                    <NavLink
+                      onClick={() => setNavActive(false)}
+                      to="membership"
+                    >
+                      MEMBERSHIP
+                    </NavLink>
                   </motion.li>
                 </div>
                 <div className="overflow-hidden">
                   <motion.li variants={mobileLinksVars}>
-                    <NavLink to="contact">CONTACT</NavLink>
+                    <NavLink onClick={() => setNavActive(false)} to="contact">
+                      CONTACT
+                    </NavLink>
                   </motion.li>
                 </div>
               </motion.div>
