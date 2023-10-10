@@ -5,6 +5,7 @@ import About from "./pages/about/About";
 import Membership from "./pages/membership/Membership";
 import Services from "./pages/services/Services";
 import Contact from "./pages/contact/Contact";
+import BackToTopButton from "./components/BackToTopButton";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="services" element={<Services />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
+      <BackToTopButton />
     </Router>
   );
 }

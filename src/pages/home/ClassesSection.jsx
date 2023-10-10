@@ -2,7 +2,7 @@ import womanMatt from "../../assets/women-mat-min.jpg";
 
 function ClassesSection() {
   return (
-    <div className="border-none bg-gympurple flex justify-center text-center pb-9">
+    <div className="border-none bg-gymblue flex justify-center text-center pb-9">
       <div className="w-72 pt-10">
         <p className="text-white font-semibold text-xl mb-4">Class Schedule</p>
         <p className="text-white mb-7">

@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        gympurple: "#7361c3",
+        // gympurple: "#7361c3",
+        gymblue: "#009de0",
+        gymrose: "#c70050",
       },
     },
   },
