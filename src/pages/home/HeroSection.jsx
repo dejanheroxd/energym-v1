@@ -18,16 +18,19 @@
 
 // export default HeroSection;
 
+import neonLightDesktop from "../../assets/neon-light-min.jpg";
+import neonLightMobile from "../../assets/neon-light-mobile-min.jpg";
+
 function HeroSection() {
   return (
     <div className="relative justify-center items-center h-[86vh] w-screen flex-row flex">
       <img
-        src="../src/assets/neon-light-min.jpg" // Default image for PC
+        src={neonLightDesktop} // Default image for PC
         alt="Background Image"
         className="absolute inset-0 w-full h-full object-cover bg-woman hidden sm:block"
       />
       <img
-        src="../src/assets/neon-light-mobile-min.jpg" // Mobile image
+        src={neonLightMobile} // Mobile image
         alt="Background Image"
         className="absolute inset-0 w-full h-full object-cover bg-woman  sm:hidden"
       />
