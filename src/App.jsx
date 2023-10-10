@@ -6,20 +6,24 @@ import Membership from "./pages/membership/Membership";
 import Services from "./pages/services/Services";
 import Contact from "./pages/contact/Contact";
 import BackToTopButton from "./components/BackToTopButton";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/membership" element={<Membership />} />
-        <Route path="services" element={<Services />} />
-        <Route path="contact" element={<Contact />} />
-      </Routes>
-      <BackToTopButton />
-    </Router>
+    <div className="pt-16">
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/membership" element={<Membership />} />
+          <Route path="services" element={<Services />} />
+          <Route path="contact" element={<Contact />} />
+        </Routes>
+        <BackToTopButton />
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

@@ -81,7 +81,12 @@ function Navbar() {
   return (
     <header className="h-16 flex items-center fixed top-0 left-0 right-0 z-50 bg-white sm:flex sm:justify-between sm:h-20 sm:px-2  sm:items-center">
       <Link to="/">
-        <p className="font-bold text-2xl pl-3 fixed top-4 z-50">ENERGYM</p>
+        <p
+          className="font-bold text-2xl pl-3 fixed top-4 z-50"
+          onClick={() => setNavActive(false)}
+        >
+          ENERGYM
+        </p>
       </Link>
       <button
         onClick={() => onNavActive()}
