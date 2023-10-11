@@ -4,7 +4,7 @@ import neonLightMobile from "../../assets/neon-light-mobile-min.jpg";
 // function HeroSection() {
 //   return (
 //     <div className="relative justify-center overflow-hidden items-center h-[105vh] w-screen flex-row flex">
-//       <LazyLoadImage
+//       <img
 //         src={neonLightDesktop} // Default image for PC
 //         alt="Background Image"
 //         className="absolute inset-0 w-full h-full  object-cover hidden sm:block"
