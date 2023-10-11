@@ -16,7 +16,7 @@ function MotivationalBanner() {
               src={joggingManDesktop} // Default image for PC
               alt=""
             />
-            <img
+            <LazyLoadImage
               loading="lazy"
               className="object-cover h-full w-full sm:hidden"
               src={joggingManMobile} // Mobile image
