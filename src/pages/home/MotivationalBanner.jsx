@@ -1,6 +1,6 @@
 import Button from "../../components/Button";
 import joggingManDesktop from "../../assets/jogging-man-neon-cop-min.jpg";
-import joggingManMobile from "../../assets/jogging-man-neon-short-min.jpg";
+import joggingManMobile from "../../assets/jogging-man-neon-short-min-1.webp";
 import manWoman from "../../assets/man-woman-min.jpg";
 
 function MotivationalBanner() {
