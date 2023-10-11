@@ -85,7 +85,7 @@ function Navbar() {
       <Link to="/">
         <p
           className="font-bold text-2xl pl-3 fixed top-4 z-50"
-          onClick={() => onNavActive()}
+          onClick={() => deactivateNav()}
         >
           ENERGYM
         </p>

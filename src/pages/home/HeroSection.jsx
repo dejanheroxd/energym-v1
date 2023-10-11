@@ -12,7 +12,7 @@ function HeroSection() {
       <img
         src={neonLightMobile} // Mobile image
         alt="Background Image"
-        className="absolute inset-0 w-full h-full object-cover  sm:hidden"
+        className="absolute inset-0 w-full h-full object-cover scale-[1] sm:hidden"
       />
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="h-96 w-80 text-center">
