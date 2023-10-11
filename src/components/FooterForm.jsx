@@ -1,7 +1,7 @@
 import { useForm } from "@formspree/react";
 
 function FooterForm() {
-  const [state, handleSubmit] = useForm("{your-form-id}");
+  const [state, handleSubmit] = useForm("xvojzoly");
   if (state.succeeded) {
     return <div>Thank you for signing up!</div>;
   }
