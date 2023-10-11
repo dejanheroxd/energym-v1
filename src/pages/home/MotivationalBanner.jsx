@@ -1,6 +1,6 @@
 import Button from "../../components/Button";
-import joggingManDesktop from "../../assets/jogging-man-neon-cop-min.jpg";
-import joggingManMobile from "../../assets/jogging-man-neon-short-min-1.webp";
+// import joggingManDesktop from "../../assets/jogging-man-neon-cop-min.jpg";
+import joggingManMobile from "../../assets/jogging-man-neon-short-min.jpg";
 import manWoman from "../../assets/man-woman-min.jpg";
 
 function MotivationalBanner() {
@@ -9,12 +9,12 @@ function MotivationalBanner() {
       <div className="h-[770px]">
         <div>
           <div className="h-96 overflow-hidden">
-            <img
+            {/* <img
               loading="lazy"
               className="object-cover h-full w-full hidden sm:block"
               src={joggingManDesktop} // Default image for PC
               alt=""
-            />
+            /> */}
             <img
               className="object-cover h-full w-full sm:hidden"
               src={joggingManMobile} // Mobile image
