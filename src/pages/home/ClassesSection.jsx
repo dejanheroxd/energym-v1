@@ -13,7 +13,7 @@ function ClassesSection() {
         </p>
         <LazyLoadImage
           loading="lazy"
-          className="h-full w-full"
+          className="h-64 w-full"
           src={womanMatt}
           alt=""
         />
