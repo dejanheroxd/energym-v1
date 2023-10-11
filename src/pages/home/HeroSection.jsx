@@ -3,16 +3,16 @@ import neonLightMobile from "../../assets/neon-light-mobile-min.jpg";
 
 function HeroSection() {
   return (
-    <div className="relative justify-center items-center h-[90vh] w-screen flex-row flex">
+    <div className="relative justify-center overflow-hidden items-center h-[105vh] w-screen flex-row flex">
       <img
         src={neonLightDesktop} // Default image for PC
         alt="Background Image"
-        className="absolute inset-0 w-full h-full object-cover bg-woman hidden sm:block"
+        className="absolute inset-0 w-full h-full  object-cover hidden sm:block"
       />
       <img
         src={neonLightMobile} // Mobile image
         alt="Background Image"
-        className="absolute inset-0 w-full h-full object-cover bg-woman  sm:hidden"
+        className="absolute inset-0 w-full h-full object-cover  sm:hidden"
       />
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="h-96 w-80 text-center">
