@@ -3,7 +3,7 @@ import neonLightMobile from "../../assets/neon-light-mobile-min.jpg";
 
 function HeroSection() {
   return (
-    <div className="relative justify-center items-center h-[100vh] w-screen flex-row flex">
+    <div className="relative justify-center items-center h-[90vh] w-screen flex-row flex">
       <img
         src={neonLightDesktop} // Default image for PC
         alt="Background Image"
