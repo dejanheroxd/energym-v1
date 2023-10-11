@@ -1,18 +1,9 @@
-import { useState } from "react";
-import FormInput from "./FormInput";
+import { useForm } from "@formspree/react";
 
 function FooterForm() {
-  const [firstName, setFirstName] = useState("");
-
-  function handleUserFirstName(firstName) {
-    setFirstName(firstName);
-  }
-
-  console.log(firstName);
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    console.log("submited");
+  const [state, handleSubmit] = useForm("{your-form-id}");
+  if (state.succeeded) {
+    return <div>Thank you for signing up!</div>;
   }
 
   return (
@@ -26,13 +17,22 @@ function FooterForm() {
         </p>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col pt-7">
-        <FormInput
-          placeholder="First Name"
-          onSetFirstName={handleUserFirstName}
-        />
-        <FormInput placeholder="Last Name" />
-        <FormInput placeholder="Email" />
-        <FormInput placeholder="Message" />
+        <div className="flex flex-col items-center mb-3">
+          <label>First Name</label>
+          <input className="border-b-black border-b outline-none text-center w-72 pb-2 pt-2 text-sm" />
+        </div>
+        <div className="flex flex-col items-center mb-3">
+          <label>Last Name</label>
+          <input className="border-b-black border-b outline-none text-center w-72 pb-2 pt-2 text-sm" />
+        </div>
+        <div className="flex flex-col items-center mb-3">
+          <label>Email</label>
+          <input className="border-b-black border-b outline-none text-center w-72 pb-2 pt-2 text-sm" />
+        </div>
+        <div className="flex flex-col items-center mb-3">
+          <label>Add Message</label>
+          <input className="border-b-black border-b outline-none text-center w-72 pb-2 pt-2 text-sm" />
+        </div>
         <div className="flex justify-center mt-4">
           <button className="px-20 py-3 text-white rounded-full bg-gymrose">
             Submit
