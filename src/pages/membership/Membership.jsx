@@ -27,7 +27,7 @@ function Membership() {
         txtCl={"white"}
       />
       <MembershipOption
-        rarity={"Silver Membership"}
+        rarity={"Platinum Membership"}
         price={"250"}
         duration={"One year"}
         bgCl={"white"}
