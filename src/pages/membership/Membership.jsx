@@ -14,25 +14,17 @@ function Membership() {
         rarity={"Silver Membership"}
         price={"35"}
         duration={"One month"}
-        bgCl={"white"}
-        borderCl={"black"}
-        txtCl={"black"}
       />
       <MembershipOption
         rarity={"Gold Membership"}
         price={"160"}
         duration={"Six months"}
-        bgCl={"gymrose"}
-        borderCl={"black"}
-        txtCl={"white"}
+        popular={true}
       />
       <MembershipOption
         rarity={"Platinum Membership"}
         price={"250"}
         duration={"One year"}
-        bgCl={"white"}
-        borderCl={"black"}
-        txtCl={"black"}
       />
     </div>
   );

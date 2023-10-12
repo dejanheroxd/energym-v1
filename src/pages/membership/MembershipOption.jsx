@@ -1,7 +1,12 @@
-function MembershipOption({ rarity, price, duration, bgCl, borderCl, txtCl }) {
+function MembershipOption({ rarity, price, duration, popular }) {
   return (
-    <div className="flex flex-col px-5 pt-10">
-      <div className="border h-80 px-8 py-8 text-center flex flex-col border-black">
+    <div className="flex flex-col px-5 justify-center items-center pt-10">
+      <div className="border h-80 px-8 py-8 text-center relative w-80 flex flex-col border-black">
+        {popular && (
+          <div className="bg-gymblue text-white w-32 h-10 flex absolute -top-5 left-24 items-center justify-center">
+            <p>Most Popular</p>
+          </div>
+        )}
         <p className="font-semibold text-xl">{rarity}</p>
         <div className="flex justify-center pt-3 pb-5">
           <div className="relative flex items-center justify-center h-20 w-32">
@@ -10,11 +15,7 @@ function MembershipOption({ rarity, price, duration, bgCl, borderCl, txtCl }) {
           </div>
         </div>
         <p className="text-sm pb-4">{duration}</p>
-        <button
-          className={`py-3 border text-${txtCl} border-${borderCl} bg-${bgCl}`}
-        >
-          Select
-        </button>
+        <button className={`py-3 border text-white bg-gymrose`}>Select</button>
       </div>
     </div>
   );
