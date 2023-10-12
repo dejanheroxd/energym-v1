@@ -5,7 +5,8 @@ export default {
     extend: {
       colors: {
         // gympurple: "#7361c3",
-        gymblue: "#009de0",
+        // gymblue: "#009de0",
+        gymblue: "#0e9ec9",
         // gymrose: "#c70050",
         // gymrose: "#7361c3",
         gymrose: "#b82abf",

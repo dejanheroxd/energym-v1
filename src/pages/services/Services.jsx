@@ -1,12 +1,16 @@
 import { useState } from "react";
 import OneService from "./OneService";
 import { CLASSES } from "../../classes";
+import ServicesHeaderBlock from "./ServicesHeaderBlock";
 
 function Services() {
   const [selects, setSelects] = useState("Cardio Class");
 
   return (
     <>
+      <div>
+        <ServicesHeaderBlock />
+      </div>
       <div className="flex justify-center">
         <select
           value={selects}
