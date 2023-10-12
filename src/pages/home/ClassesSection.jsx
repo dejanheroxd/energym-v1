@@ -5,13 +5,17 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 function ClassesSection() {
   return (
     <div className="border-none bg-gymblue flex justify-center text-center pb-9">
-      <div className="w-72 pt-10">
-        <p className="text-white font-semibold text-xl mb-4">Class Schedule</p>
-        <p className="text-white mb-7">
-          {`Explore our diverse class schedule and find the perfect fitness
+      <div className="w-72 pt-10 lg:flex">
+        <div className="">
+          <p className="text-white font-semibold text-xl mb-4">
+            Class Schedule
+          </p>
+          <p className="text-white mb-7">
+            {`Explore our diverse class schedule and find the perfect fitness
           classes to suit your goals and preferences. From high-energy cardio to
           mindful yoga, we've got you covered.`}
-        </p>
+          </p>
+        </div>
         <LazyLoadImage
           loading="lazy"
           className="h-64 w-full"

@@ -82,10 +82,10 @@ function Navbar() {
   };
 
   return (
-    <header className="h-16 flex items-center fixed top-0 left-0 right-0 z-50 bg-white sm:flex sm:justify-between sm:h-20 sm:px-2  sm:items-center">
+    <header className="h-16 flex items-center fixed top-0 left-0 right-0 z-50 bg-white sm:flex sm:justify-between sm:h-20 sm:px-2  sm:items-center shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
       <Link to="/">
         <p
-          className="font-bold text-2xl pl-3 fixed top-4 z-50"
+          className="font-bold text-2xl sm:top-6 pl-3 fixed top-4 z-50"
           onClick={() => deactivateNav()}
         >
           ENERGYM
@@ -118,37 +118,37 @@ function Navbar() {
               animate="animate"
               exit="exit"
               className="
-         sm:flex sm:relative origin-top sm:flex-row justify-center flex text-3xl sm:text-base text-center    flex-col gap-y-7 sm:gap-x-3 bg-white top-0 right-0 bottom-0 z-40 left-0 py-40 px-8 sm:px-0 sm:py-0 sm:bg-opacity-0 sm:left-0 h-full fixed font-semibold"
+         sm:flex sm:relative origin-top sm:flex-row justify-center flex text-3xl sm:text-base text-center sm:pr-2 flex-col gap-y-7 sm:gap-x-3 bg-white top-0 right-0 bottom-0 z-40 left-0 py-40 px-8 sm:px-0 sm:py-0 sm:bg-opacity-0 sm:left-0 h-full fixed font-semibold"
             >
               <motion.div
                 variants={containerVars}
                 initial="initial"
                 animate="open"
                 exit="initial"
-                className="flex flex-col gap-y-4 sm:flex-row sm:gap-x-3"
+                className="flex flex-col gap-y-4 sm:flex-row sm:gap-x-3 lg:gap-x-10 "
               >
-                <div className="overflow-hidden">
+                <div className="overflow-hidden lg:hover:text-gymrose duration-300">
                   <motion.li variants={mobileLinksVars}>
                     <NavLink onClick={() => deactivateNav()} to="about">
                       ABOUT
                     </NavLink>
                   </motion.li>
                 </div>
-                <div className="overflow-hidden">
+                <div className="overflow-hidden lg:hover:text-gymrose duration-300">
                   <motion.li variants={mobileLinksVars}>
                     <NavLink onClick={() => deactivateNav()} to="services">
                       SERVICES
                     </NavLink>
                   </motion.li>
                 </div>
-                <div className="overflow-hidden">
+                <div className="overflow-hidden lg:hover:text-gymrose duration-300">
                   <motion.li variants={mobileLinksVars}>
                     <NavLink onClick={() => deactivateNav()} to="membership">
                       MEMBERSHIP
                     </NavLink>
                   </motion.li>
                 </div>
-                <div className="overflow-hidden">
+                <div className="overflow-hidden lg:hover:text-gymrose duration-300">
                   <motion.li variants={mobileLinksVars}>
                     <NavLink onClick={() => deactivateNav()} to="contact">
                       CONTACT
