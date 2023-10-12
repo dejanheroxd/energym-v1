@@ -93,7 +93,7 @@ function Navbar() {
       </Link>
       <button
         onClick={() => onNavActive()}
-        className="absolute top-[18px] h-8 w-10 flex justify-center items-center right-4 z-50 sm:hidden"
+        className="absolute top-[18px] h-8 w-10 flex bg-gray-600 justify-center items-center right-4 z-50 sm:hidden"
       >
         <div>
           <span
