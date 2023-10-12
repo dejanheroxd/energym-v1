@@ -85,7 +85,7 @@ function Navbar() {
     <header className="h-16 flex items-center fixed top-0 left-0 right-0 z-50 bg-white sm:flex sm:justify-center sm:h-20 sm:px-2  sm:items-center shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
       <Link to="/">
         <p
-          className="font-bold text-2xl sm:top-6 pl-3 fixed top-4 sm:left-0 z-50"
+          className="font-bold text-2xl sm:top-6 pl-3 2xl:pl-8 fixed top-4 sm:left-0 z-50"
           onClick={() => deactivateNav()}
         >
           ENERGYM
@@ -160,7 +160,7 @@ function Navbar() {
           )}
         </AnimatePresence>
       </nav>
-      <button className="bg-gymrose h-20 w-40 text-white fixed right-0">
+      <button className="bg-gymrose h-20 w-40 text-white fixed right-0 hidden sm:block sm:hover:bg-black duration-300">
         Join Now
       </button>
     </header>
