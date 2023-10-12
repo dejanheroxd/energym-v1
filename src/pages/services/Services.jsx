@@ -1,7 +1,7 @@
 import { useState } from "react";
 import OneService from "./OneService";
 import { CLASSES } from "../../classes";
-import ServicesHeaderBlock from "./ServicesHeaderBlock";
+import SectionHeaderBlock from "../../components/SectionHeaderBlock";
 
 function Services() {
   const [selects, setSelects] = useState("Cardio Class");
@@ -9,9 +9,14 @@ function Services() {
   return (
     <>
       <div>
-        <ServicesHeaderBlock />
+        <SectionHeaderBlock
+          header={"Our Services"}
+          description={
+            "Welcome to a world of fitness and well-being. Explore our diverse range of classes, tailored to meet your unique fitness goals. Whether you're looking to build muscle, enhance your cardiovascular health, or discover the exhilarating world of powerlifting, we've got you covered. Our expert trainers and state-of-the-art facilities are here to empower you on your fitness journey!"
+          }
+        />
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center pt-6">
         <select
           value={selects}
           onChange={(e) => setSelects(e.target.value)}
