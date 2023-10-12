@@ -4,8 +4,8 @@ function OneService(props) {
   return (
     <div className="flex justify-center pt-8">
       <div className="w-[320px] border border-black flex flex-col items-center">
-        <div>
-          <img src={classImage} alt="" />
+        <div className="overflow-hidden h-52 w-full">
+          <img src={classImage} alt="" className="object-cover h-full w-full" />
         </div>
         <div className="w-64 py-6">
           <p className="font-semibold text-lg">{oneClassName}</p>

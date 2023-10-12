@@ -9,6 +9,8 @@ export const CLASSES = [
     classImage: cardio,
     hour: 2,
     price: 25,
+    description:
+      "Our tailored cardio training brings out your inner champion. Achieve peak health while having fun on your fitness journey.",
   },
   {
     id: 2,
@@ -16,6 +18,8 @@ export const CLASSES = [
     classImage: muscle,
     hour: 2,
     price: 25,
+    description:
+      "Transform your physique with our exclusive muscle-building program. Join us to experience the journey of a lifetime. Discover the power within you!",
   },
   {
     id: 3,
@@ -23,5 +27,7 @@ export const CLASSES = [
     classImage: strength,
     hour: 1,
     price: 20,
+    description:
+      "Unlock your potential with powerlifting. Strength, determination, and success are just a lift away.",
   },
 ];

@@ -60,6 +60,7 @@ function FooterForm() {
               field="email"
               errors={state.errors}
             />
+            <label className="text-xs">Add a message</label>
             <textarea
               id="message"
               name="message"

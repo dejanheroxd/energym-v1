@@ -3,7 +3,7 @@ import OneService from "./OneService";
 import { CLASSES } from "../../classes";
 
 function Services() {
-  const [selects, setSelects] = useState("cardio");
+  const [selects, setSelects] = useState("Cardio Class");
 
   return (
     <>
