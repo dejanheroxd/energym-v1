@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function OneService(props) {
   const { oneClassName, classImage, hour, price, description } = props.data;
 
@@ -27,9 +29,11 @@ function OneService(props) {
             <p>{hour} hr</p>
             <p className="pb-4">${price}</p>
           </div>
-          <button className="w-full py-2 duration-500 text-white rounded-full bg-gymrose">
-            Book Now
-          </button>
+          <Link to="/contact">
+            <button className="w-full py-2 duration-500 text-white rounded-full bg-gymrose">
+              Book Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>

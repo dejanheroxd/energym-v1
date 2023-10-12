@@ -27,7 +27,7 @@ function BackToTopButton() {
     <button
       onClick={scrollToTop}
       className={`${
-        isVisible ? "opacity-100" : "opacity-0"
+        isVisible ? "opacity-100 " : "opacity-0 "
       } p-3 fixed rounded-full transition duration-500 px-[8px] py-[13px] bottom-[25%] right-7 text-white bg-gymrose`}
     >
       <svg

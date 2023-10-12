@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import womanMatt from "../../assets/women-mat-min.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -17,9 +18,11 @@ function ClassesSection() {
           src={womanMatt}
           alt=""
         />
-        <button className="mt-9 text-black text-sm px-10 py-4 rounded-full bg-white">
-          View All
-        </button>
+        <Link to="/services">
+          <button className="mt-9 text-black text-sm px-10 py-4 rounded-full bg-white">
+            View All
+          </button>
+        </Link>
       </div>
     </div>
   );

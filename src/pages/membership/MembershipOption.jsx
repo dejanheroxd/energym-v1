@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function MembershipOption({ rarity, price, duration, popular }) {
   return (
     <div className="flex flex-col px-5 justify-center items-center pt-10">
@@ -15,7 +17,11 @@ function MembershipOption({ rarity, price, duration, popular }) {
           </div>
         </div>
         <p className="text-sm pb-4">{duration}</p>
-        <button className={`py-3 border text-white bg-gymrose`}>Select</button>
+        <Link to="/contact">
+          <button className="py-3 border px-16 text-white bg-gymrose">
+            Select
+          </button>
+        </Link>
       </div>
     </div>
   );
