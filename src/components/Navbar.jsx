@@ -252,7 +252,7 @@ function Navbar() {
               {t("navigation.navCta")}
             </button>
           </Link>
-          <div className="absolute top-[11px] right-20 gap-x-2 flex flex-row sm:gap-x-3 sm:absolute sm:top-4 sm:right-48 ">
+          <div className="absolute top-[11px] right-20 gap-x-2 flex flex-row sm:gap-x-3 sm:absolute sm:top-5 sm:right-48 ">
             <button
               onClick={() => handleChangeLanguage("en")}
               className="flex flex-col items-center sm:flex sm:gap-x-1 sm:items-center"
@@ -261,7 +261,7 @@ function Navbar() {
                 src="https://flagsapi.com/GB/flat/64.png"
                 className="w-6"
               ></img>
-              <p className="text-sm">EN</p>
+              <p className="text-sm text-gray-500">EN</p>
             </button>
             <button
               onClick={() => handleChangeLanguage("gr")}
@@ -271,7 +271,7 @@ function Navbar() {
                 src="https://flagsapi.com/GR/flat/64.png"
                 className="w-6"
               ></img>
-              <p className="text-sm">GR</p>
+              <p className="text-sm text-gray-500">GR</p>
             </button>
           </div>
         </motion.header>
