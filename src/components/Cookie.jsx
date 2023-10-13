@@ -13,7 +13,7 @@ function Cookie() {
 
   return (
     cookieVisible && (
-      <div className=" w-full  fixed bg-white bottom-0 h-64 flex justify-center">
+      <div className=" w-full h-[290px] fixed bg-white bottom-0 flex justify-center">
         <div className=" w-80 h-full flex flex-col pt-10 lg:items-center lg:flex-row lg:w-[800px] lg:justify-between">
           <p className="text-gray-600 pb-6 text-sm lg:w-80">
             {t("cookie.header")}
