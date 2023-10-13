@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { X } from "phosphor-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -11,9 +12,20 @@ function Cookie() {
     setCookieVisible(false);
   }
 
+  const cookieVars = {
+    initial: { opacity: 0, y: 50, transition: { duration: 1.4 } },
+    animate: { opacity: 1, y: 0, transition: { duration: 1.4 } },
+    exit: { opacity: 0, y: 50, transition: { duration: 1.4 } },
+  };
+
   return (
     cookieVisible && (
-      <div className=" w-full h-[290px] fixed bg-white bottom-0 flex justify-center">
+      <motion.div
+        variants={cookieVars}
+        initial="initial"
+        animate="animate"
+        className=" w-full h-[290px] fixed bg-white bottom-0 flex justify-center"
+      >
         <div className=" w-80 h-full flex flex-col pt-10 lg:items-center lg:flex-row lg:w-[800px] lg:justify-between">
           <p className="text-gray-600 pb-6 text-sm lg:w-80">
             {t("cookie.header")}
@@ -41,7 +53,7 @@ function Cookie() {
             className="absolute top-3 right-3"
           />
         </button>
-      </div>
+      </motion.div>
     )
   );
 }
