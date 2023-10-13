@@ -31,9 +31,8 @@ function FooterForm() {
         {state.succeeded || (
           <div>
             <div className="flex flex-col items-center mb-3">
-              <label htmlFor="firstname">First Name</label>
+              <label htmlFor="firstnName">First Name</label>
               <input
-                htmlFor="firstname"
                 id="firstName"
                 type="firstName"
                 name="firstName"
@@ -41,9 +40,8 @@ function FooterForm() {
               />
             </div>
             <div className="flex flex-col items-center mb-3">
-              <label htmlFor="lastname">Last Name</label>
+              <label htmlFor="lastName">Last Name</label>
               <input
-                htmlFor="firstname"
                 id="lastName"
                 type="lastName"
                 name="lastName"
