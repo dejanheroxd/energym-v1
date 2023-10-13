@@ -13,6 +13,7 @@ import Services from "./pages/services/Services";
 import Contact from "./pages/contact/Contact";
 import BackToTopButton from "./components/BackToTopButton";
 import Footer from "./components/Footer";
+import Cookie from "./components/Cookie";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -39,6 +40,7 @@ function App() {
         </Routes>
         <BackToTopButton />
         <Footer />
+        <Cookie />
       </Router>
     </div>
   );
