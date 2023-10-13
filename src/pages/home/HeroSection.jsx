@@ -22,7 +22,7 @@ function HeroSection() {
       </picture>
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="h-96 w-80 lg:w-[1400px] 2xl:w-[2000px] xl:w-[850px] text-center">
-          <h1 className="text-white font-semibold text-5xl xl:text-6xl 2xl:text-[6rem]">
+          <h1 className="text-white font-semibold w-[330px] md:w-full text-5xl xl:text-6xl 2xl:text-[6rem]">
             {t("hero.header")}
           </h1>
           <h2 className="text-white font-semibold text-2xl mt-6 2xl:text-3xl">
