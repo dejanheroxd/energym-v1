@@ -31,7 +31,7 @@ function FooterForm() {
         {state.succeeded || (
           <div>
             <div className="flex flex-col items-center mb-3">
-              <label htmlFor="firstName">First Name</label>
+              <label htmlFor="firstname">First Name</label>
               <input
                 id="firstName"
                 type="firstName"
@@ -40,7 +40,7 @@ function FooterForm() {
               />
             </div>
             <div className="flex flex-col items-center mb-3">
-              <label htmlFor="lastName">Last Name</label>
+              <label htmlFor="lastname">Last Name</label>
               <input
                 id="lastName"
                 type="lastName"
@@ -62,7 +62,9 @@ function FooterForm() {
               field="email"
               errors={state.errors}
             />
-            <label className="text-xs">Add a message</label>
+            <label htmlFor="message" className="text-xs">
+              Add a message
+            </label>
             <textarea
               id="message"
               name="message"
