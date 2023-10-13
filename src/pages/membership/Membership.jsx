@@ -1,14 +1,15 @@
+import { useTranslation } from "react-i18next";
 import SectionHeaderBlock from "../../components/SectionHeaderBlock";
 import MembershipOption from "./MembershipOption";
 
 function Membership() {
+  const [t] = useTranslation("global");
+
   return (
     <div className="xl:pb-[300px] 2xl:pb-[350px]">
       <SectionHeaderBlock
-        header={"Select a Membership"}
-        description={
-          "Discover the right membership option for you that aligns with your fitness aspirations. Each membership comes with a unique set of benefits designed to enhance your fitness journey, so you can focus on achieving your goals while enjoying a wide range of exclusive perks tailored just for you."
-        }
+        header={t("member.memberHeroHeader")}
+        description={t("member.memberHeroSub")}
         overflow={true}
       />
       <div className="xl:relative xl:flex xl:justify-center">
@@ -16,18 +17,18 @@ function Membership() {
           <MembershipOption
             rarity={"Silver Membership"}
             price={"35"}
-            duration={"One month"}
+            duration={t("member.memberMonthOne")}
           />
           <MembershipOption
             rarity={"Gold Membership"}
             price={"160"}
-            duration={"Six months"}
+            duration={t("member.memberMonthSix")}
             popular={true}
           />
           <MembershipOption
             rarity={"Platinum Membership"}
             price={"250"}
-            duration={"One year"}
+            duration={t("member.memberMonthYear")}
           />
         </div>
       </div>

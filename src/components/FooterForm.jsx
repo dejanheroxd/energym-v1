@@ -1,7 +1,9 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { ArrowCounterClockwise } from "phosphor-react";
+import { useTranslation } from "react-i18next";
 
 function FooterForm() {
+  const [t] = useTranslation("global");
   const [state, handleSubmit] = useForm("xvojzoly");
 
   return (
@@ -14,11 +16,9 @@ function FooterForm() {
         <div className="flex justify-center">
           <div className="text-center  ">
             <p className="font-semibold text-[1.1rem] px-3 lg:px-0 mb-3">
-              Not a Member? Send us a Email to get in Contact
+              {t("footer.header")}
             </p>
-            <p>
-              Fill out the form below and a sales rep will get in touch shortly.
-            </p>
+            <p>{t("footer.subText")}</p>
           </div>
         </div>
       )}
@@ -31,7 +31,7 @@ function FooterForm() {
         {state.succeeded || (
           <div>
             <div className="flex flex-col items-center mb-3">
-              <label htmlFor="firstnName">First Name</label>
+              <label htmlFor="firstnName">{t("form.firstName")}</label>
               <input
                 id="firstName"
                 type="firstName"
@@ -40,7 +40,7 @@ function FooterForm() {
               />
             </div>
             <div className="flex flex-col items-center mb-3">
-              <label htmlFor="lastName">Last Name</label>
+              <label htmlFor="lastName">{t("form.lastName")}</label>
               <input
                 id="lastName"
                 type="lastName"
@@ -49,7 +49,7 @@ function FooterForm() {
               />
             </div>
             <div className="flex flex-col items-center mb-3">
-              <label htmlFor="email">Email Address</label>
+              <label htmlFor="email">{t("form.email")}</label>
               <input
                 id="email"
                 type="email"
@@ -63,7 +63,7 @@ function FooterForm() {
               errors={state.errors}
             />
             <label htmlFor="message" className="text-xs">
-              Add a message
+              {t("form.message")}
             </label>
             <textarea
               id="message"
@@ -86,7 +86,11 @@ function FooterForm() {
               state.succeeded ? "bg-gray-900" : ""
             } px-20 py-3 duration-500 text-white sm:hover:bg-gymrosedark rounded-full bg-gymrose`}
           >
-            {state.succeeded ? <ArrowCounterClockwise size={20} /> : "Submit"}
+            {state.succeeded ? (
+              <ArrowCounterClockwise size={20} />
+            ) : (
+              t("form.cta")
+            )}
           </button>
         </div>
       </form>

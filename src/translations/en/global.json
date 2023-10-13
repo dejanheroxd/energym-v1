@@ -1,0 +1,75 @@
+{
+  "navigation": {
+    "navItemFirst": "ABOUT",
+    "navItemSecond": "SERVICES",
+    "navItemThird": "MEMBERSHIP",
+    "navItemFourth": "CONTACT",
+    "navCta": "Join Now"
+  },
+  "hero": {
+    "header": "Welcome to ENERGYM",
+    "subheader": "The fitness facility for all of your needs"
+  },
+  "motivation": {
+    "header": "The Energym Experience",
+    "subText": "At Energym, we're not just a fitness facility; we're your dedicated partner in helping you achieve and maintain a healthier, more active lifestyle. Our mission is to empower you with the knowledge and support you need to reach your fitness goals.",
+    "motCta": "Learn More"
+  },
+  "motivationSecond": {
+    "header": "Fitness Is for Everyone",
+    "subText": "We passionately believe that fitness is a journey meant for everyone. Whether you're an experienced athlete or taking your first steps towards a healthier lifestyle, our gym welcomes individuals of all backgrounds and fitness levels.",
+    "motCta": "Reserve a Spot"
+  },
+  "classes": {
+    "header": "Class Schedule",
+    "subText": "Explore our diverse class schedule and find the perfect fitness classes to suit your goals and preferences. From high-energy cardio to mindful yoga, we've got you covered.",
+    "classCta": "View All"
+  },
+  "footer": {
+    "header": "Not a Member? Send us a Email to get in Contact",
+    "subText": "Fill out the form below and a sales rep will get in touch shortly."
+  },
+  "form": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "message": "Add a message",
+    "cta": "Submit"
+  },
+  "about": {
+    "heroHeader": "Welcome to the Energym Family",
+    "heroSubHeader": "Here, you're not just another gym-goer, but a valued member of our community. We're thrilled to have you with us on your fitness journey. Our experienced trainers and staff are here to guide you and provide assistance every step of the way.",
+    "descriptionHeader": "Why We Choose Fitness",
+    "descriptionFirstSub": "It's our passion to help you live a healthier, more active life. Fitness isn't just about working out; it's about feeling better, gaining more energy, and taking care of yourself.",
+    "descriptionSecondSub": "Our team is made up of experts who are dedicated to your well-being. We provide a range of services and classes to make fitness accessible to everyone. Whether you're new to exercise or have experience, we're here to support you. Our journey began with a simple idea, the idea that everyone deserves a chance to be healthier. We're not just another gym; we're a community that welcomes you with open arms. Let us help you achieve your fitness goals and lead you towards a better, more active lifestyle."
+  },
+  "services": {
+    "heroHeader": "Our Services",
+    "heroSubHeader": "Welcome to a world of fitness and well-being. Explore our diverse range of classes, tailored to meet your unique fitness goals. Whether you're looking to build muscle, enhance your cardiovascular health, or discover the exhilarating world of powerlifting, we've got you covered. Our expert trainers and state-of-the-art facilities are here to empower you on your fitness journey!",
+    "classOne": "Cardio Class",
+    "classTwo": "Muscle Building",
+    "classThree": "Powerlifting",
+    "classOneDes": "Our tailored cardio training brings out your inner champion. Achieve peak health while having fun on your fitness journey.",
+    "classTwoDes": "Transform your physique with our exclusive muscle-building program. Join us to experience the journey of a lifetime. Discover the power within you!",
+    "classThreeDes": "Unlock your potential with powerlifting. Strength, determination, and success are just a lift away.",
+    "read": "Read More",
+    "day1": "Mon",
+    "day2": "Tue",
+    "day3": "Wed",
+    "day4": "Thu",
+    "day5": "Fri",
+    "hour": "hr",
+    "bookBtn": "Book Now"
+  },
+  "member": {
+    "memberHeroHeader": "Select a Membership",
+    "memberHeroSub": "Discover the right membership option for you that aligns with your fitness aspirations. Each membership comes with a unique set of benefits designed to enhance your fitness journey, so you can focus on achieving your goals while enjoying a wide range of exclusive perks tailored just for you.",
+    "memberMonthOne": "One month",
+    "memberMonthSix": "Six months",
+    "memberMonthYear": "One year",
+    "selectBtn": "Select"
+  },
+  "contact": {
+    "contactHeader": "Contact"
+  }
+}

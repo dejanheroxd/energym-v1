@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 function MembershipOption({ rarity, price, duration, popular }) {
+  const [t] = useTranslation("global");
+
   return (
     <div className="flex flex-col px-5 2xl:px-14 justify-center items-center pt-10 ">
       <div className="border h-80 2xl:h-[380px] px-8 py-8 text-center relative w-80 flex xl:bg-white flex-col border-black">
@@ -22,7 +25,7 @@ function MembershipOption({ rarity, price, duration, popular }) {
             aria-label="Button"
             className="py-3 px-16 text-white duration-200 bg-gymrose sm:hover:bg-gymrosedark"
           >
-            Select
+            {t("member.selectBtn")}
           </button>
         </Link>
       </div>

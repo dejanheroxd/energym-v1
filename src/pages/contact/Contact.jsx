@@ -1,8 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 function Contact() {
+  const [t] = useTranslation("global");
+
   return (
     <>
       <div className="text-center h-24 lg:h-40 xl:h-60 bg-gymblue text-white flex justify-center items-center">
-        <p className="font-semibold text-2xl xl:text-6xl">Contact</p>
+        <p className="font-semibold text-2xl xl:text-6xl">
+          {t("contact.contactHeader")}
+        </p>
       </div>
       <div className="flex justify-center">
         <iframe

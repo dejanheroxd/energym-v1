@@ -1,11 +1,17 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
+  const [t, i18n] = useTranslation("global");
   const [navActive, setNavActive] = useState(false);
   const [navBarActive, setNavBarActve] = useState(true);
   const [prevScrollY, setPrevScrollY] = useState(0);
+
+  function handleChangeLanguage(lang) {
+    i18n.changeLanguage(lang);
+  }
 
   function onNavActive() {
     setNavActive((prev) => !prev);
@@ -192,7 +198,7 @@ function Navbar() {
                           onClick={() => deactivateNav()}
                           to="about"
                         >
-                          ABOUT
+                          {t("navigation.navItemFirst")}
                         </NavLink>
                       </motion.li>
                     </div>
@@ -203,7 +209,7 @@ function Navbar() {
                           onClick={() => deactivateNav()}
                           to="services"
                         >
-                          SERVICES
+                          {t("navigation.navItemSecond")}
                         </NavLink>
                       </motion.li>
                     </div>
@@ -214,7 +220,7 @@ function Navbar() {
                           onClick={() => deactivateNav()}
                           to="membership"
                         >
-                          MEMBERSHIP
+                          {t("navigation.navItemThird")}
                         </NavLink>
                       </motion.li>
                     </div>
@@ -225,9 +231,31 @@ function Navbar() {
                           onClick={() => deactivateNav()}
                           to="contact"
                         >
-                          CONTACT
+                          {t("navigation.navItemFourth")}
                         </NavLink>
                       </motion.li>
+                    </div>
+                    <div className="absolute bottom-5 right-7 gap-y-2 flex flex-col sm:gap-x-3 sm:absolute sm:top-4 sm:right-48 ">
+                      <button
+                        onClick={() => handleChangeLanguage("en")}
+                        className="flex flex-col items-center sm:flex sm:gap-x-1 sm:items-center"
+                      >
+                        <img
+                          src="https://flagsapi.com/GB/flat/64.png"
+                          className="w-6"
+                        ></img>
+                        <p className="text-sm">English</p>
+                      </button>
+                      <button
+                        onClick={() => handleChangeLanguage("gr")}
+                        className="flex flex-col items-center sm:flex sm:gap-x-1 sm:items-center"
+                      >
+                        <img
+                          src="https://flagsapi.com/GR/flat/64.png"
+                          className="w-6"
+                        ></img>
+                        <p className="text-sm">Greek</p>
+                      </button>
                     </div>
                   </motion.div>
                 </motion.ul>
@@ -243,7 +271,7 @@ function Navbar() {
               aria-label="Button"
               className="bg-gymrose h-20 w-40 text-white  hidden sm:block sm:hover:bg-black duration-300"
             >
-              Join Now
+              {t("navigation.navCta")}
             </button>
           </Link>
         </motion.header>
