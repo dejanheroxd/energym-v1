@@ -48,12 +48,14 @@ function Navbar() {
   const handleScroll = useCallback(() => {
     const currentScrollY = window.scrollY;
 
-    if (currentScrollY < prevScrollY) {
+    if (currentScrollY < prevScrollY && window.innerWidth < 640) {
       // If scrolling up, show the navigation
       setNavBarActve(true);
     } else {
       // If scrolling down, hide the navigation
-      setNavBarActve(false);
+      if (window.innerWidth < 640) {
+        setNavBarActve(false);
+      }
     }
 
     setPrevScrollY(currentScrollY);
