@@ -235,28 +235,6 @@ function Navbar() {
                         </NavLink>
                       </motion.li>
                     </div>
-                    <div className="absolute bottom-5 right-7 gap-y-2 flex flex-col sm:gap-x-3 sm:absolute sm:top-4 sm:right-48 ">
-                      <button
-                        onClick={() => handleChangeLanguage("en")}
-                        className="flex flex-col items-center sm:flex sm:gap-x-1 sm:items-center"
-                      >
-                        <img
-                          src="https://flagsapi.com/GB/flat/64.png"
-                          className="w-6"
-                        ></img>
-                        <p className="text-sm">English</p>
-                      </button>
-                      <button
-                        onClick={() => handleChangeLanguage("gr")}
-                        className="flex flex-col items-center sm:flex sm:gap-x-1 sm:items-center"
-                      >
-                        <img
-                          src="https://flagsapi.com/GR/flat/64.png"
-                          className="w-6"
-                        ></img>
-                        <p className="text-sm">Greek</p>
-                      </button>
-                    </div>
                   </motion.div>
                 </motion.ul>
               )}
@@ -274,6 +252,28 @@ function Navbar() {
               {t("navigation.navCta")}
             </button>
           </Link>
+          <div className="absolute top-[11px] right-20 gap-x-2 flex flex-row sm:gap-x-3 sm:absolute sm:top-4 sm:right-48 ">
+            <button
+              onClick={() => handleChangeLanguage("en")}
+              className="flex flex-col items-center sm:flex sm:gap-x-1 sm:items-center"
+            >
+              <img
+                src="https://flagsapi.com/GB/flat/64.png"
+                className="w-6"
+              ></img>
+              <p className="text-sm">EN</p>
+            </button>
+            <button
+              onClick={() => handleChangeLanguage("gr")}
+              className="flex flex-col items-center sm:flex sm:gap-x-1 sm:items-center"
+            >
+              <img
+                src="https://flagsapi.com/GR/flat/64.png"
+                className="w-6"
+              ></img>
+              <p className="text-sm">GR</p>
+            </button>
+          </div>
         </motion.header>
       )}
     </AnimatePresence>
