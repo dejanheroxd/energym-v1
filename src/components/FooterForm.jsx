@@ -33,6 +33,7 @@ function FooterForm() {
             <div className="flex flex-col items-center mb-3">
               <label htmlFor="firstname">First Name</label>
               <input
+                htmlFor="firstname"
                 id="firstName"
                 type="firstName"
                 name="firstName"
@@ -42,6 +43,7 @@ function FooterForm() {
             <div className="flex flex-col items-center mb-3">
               <label htmlFor="lastname">Last Name</label>
               <input
+                htmlFor="firstname"
                 id="lastName"
                 type="lastName"
                 name="lastName"
