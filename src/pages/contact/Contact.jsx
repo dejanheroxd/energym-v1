@@ -2,7 +2,7 @@ function Contact() {
   return (
     <>
       <div className="text-center h-24 lg:h-40 xl:h-60 bg-gymblue text-white flex justify-center items-center">
-        <p className="font-semibold text-2xl">Contact</p>
+        <p className="font-semibold text-2xl xl:text-6xl">Contact</p>
       </div>
       <div className="flex justify-center">
         <iframe

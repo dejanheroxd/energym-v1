@@ -5,11 +5,11 @@ function OneService(props) {
 
   return (
     <div className="flex justify-center pt-8 pb-8">
-      <div className="w-[320px] border border-black flex flex-col items-center">
-        <div className="overflow-hidden h-52 w-full">
+      <div className="w-[320px] border border-black flex flex-col items-center lg:flex-row lg:w-[800px] lg:h-[430px] 2xl:w-[900px]">
+        <div className="overflow-hidden h-52 w-full lg:w-[400px] lg:h-full 2xl:w-[450px]">
           <img src={classImage} alt="" className="object-cover h-full w-full" />
         </div>
-        <div className="w-64 py-6">
+        <div className="w-64 py-6 lg:w-[400px] lg:px-12 2xl:w-[450px]">
           <p className="font-semibold text-lg">{oneClassName}</p>
           <p className="py-4">{description}</p>
           <a href="" className="underline">
@@ -30,7 +30,7 @@ function OneService(props) {
             <p className="pb-4">${price}</p>
           </div>
           <Link to="/contact">
-            <button className="w-full py-2 duration-500 text-white rounded-full bg-gymrose">
+            <button className="w-full py-2 duration-500 text-white rounded-full bg-gymrose lg:w-28">
               Book Now
             </button>
           </Link>

@@ -42,7 +42,7 @@ function ClassesSection() {
             />
           </div>
         </div>
-        <Link>
+        <Link to="/services">
           <button className="mt-9 text-black text-sm px-10 py-4 xl:my-14 xl:text-base xl:px-[46px] xl:py-[18px] rounded-full bg-white">
             View All
           </button>
