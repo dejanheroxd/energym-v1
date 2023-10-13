@@ -25,6 +25,7 @@ function BackToTopButton() {
 
   return (
     <button
+      aria-label="Button"
       onClick={scrollToTop}
       className={`${
         isVisible ? "opacity-100 " : "opacity-0 "

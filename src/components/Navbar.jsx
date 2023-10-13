@@ -149,6 +149,7 @@ function Navbar() {
             </p>
           </Link>
           <button
+            aria-label="Button"
             onClick={() => onNavActive()}
             className="absolute top-[13px] h-10 w-12 flex justify-center items-center right-4 z-50 sm:hidden"
           >
@@ -221,7 +222,10 @@ function Navbar() {
             </AnimatePresence>
           </nav>
           <Link to="/membership" className="fixed right-0">
-            <button className="bg-gymrose h-20 w-40 text-white  hidden sm:block sm:hover:bg-black duration-300">
+            <button
+              aria-label="Button"
+              className="bg-gymrose h-20 w-40 text-white  hidden sm:block sm:hover:bg-black duration-300"
+            >
               Join Now
             </button>
           </Link>

@@ -77,6 +77,7 @@ function FooterForm() {
         )}
         <div className="flex justify-center mt-4">
           <button
+            aria-label="Button"
             type="submit"
             disabled={state.submitting}
             className={`${

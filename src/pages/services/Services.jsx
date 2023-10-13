@@ -36,6 +36,7 @@ function Services() {
       <div className="hidden 2xl:flex 2xl:justify-center 2xl:pt-20">
         <div className="hidden 2xl:flex 2xl:hover:cursor-pointer">
           <button
+            aria-label="Button"
             onClick={(e) => onSelect(e.target.value)}
             value="Cardio Class"
             className={`${
@@ -47,6 +48,7 @@ function Services() {
             Cardio Class
           </button>
           <button
+            aria-label="Button"
             onClick={(e) => onSelect(e.target.value)}
             value="Muscle Building"
             className={`${
@@ -58,6 +60,7 @@ function Services() {
             Muscle Building
           </button>
           <button
+            aria-label="Button"
             onClick={(e) => onSelect(e.target.value)}
             value="Powerlifting"
             className={`${

@@ -43,7 +43,10 @@ function ClassesSection() {
           </div>
         </div>
         <Link to="/services">
-          <button className="mt-9 border border-white sm:duration-200 text-black text-sm px-10 sm:hover:bg-transparent sm:hover:text-white sm:hover:border-white py-4 xl:my-14 xl:text-base xl:px-[46px] xl:py-[18px] rounded-full bg-white">
+          <button
+            aria-label="Button"
+            className="mt-9 border border-white sm:duration-200 text-black text-sm px-10 sm:hover:bg-transparent sm:hover:text-white sm:hover:border-white py-4 xl:my-14 xl:text-base xl:px-[46px] xl:py-[18px] rounded-full bg-white"
+          >
             View All
           </button>
         </Link>
