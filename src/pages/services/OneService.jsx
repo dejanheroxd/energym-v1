@@ -30,7 +30,7 @@ function OneService(props) {
             <p className="pb-4">${price}</p>
           </div>
           <Link to="/contact">
-            <button className="w-full py-2 duration-500 text-white rounded-full bg-gymrose lg:w-28">
+            <button className="w-full py-2 duration-500 text-white rounded-full bg-gymrose lg:w-28 sm:hover:bg-gymrosedark">
               Book Now
             </button>
           </Link>

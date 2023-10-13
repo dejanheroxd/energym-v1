@@ -10,6 +10,7 @@ export default {
         // gymrose: "#c70050",
         // gymrose: "#7361c3",
         gymrose: "#b82abf",
+        gymrosedark: "#871f8c",
       },
     },
   },

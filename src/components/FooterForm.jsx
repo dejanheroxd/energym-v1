@@ -81,7 +81,7 @@ function FooterForm() {
             disabled={state.submitting}
             className={`${
               state.succeeded ? "bg-gray-900" : ""
-            } px-20 py-3 duration-500 text-white rounded-full bg-gymrose`}
+            } px-20 py-3 duration-500 text-white sm:hover:bg-gymrosedark rounded-full bg-gymrose`}
           >
             {state.succeeded ? <ArrowCounterClockwise size={20} /> : "Submit"}
           </button>

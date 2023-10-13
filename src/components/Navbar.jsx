@@ -220,9 +220,11 @@ function Navbar() {
               )}
             </AnimatePresence>
           </nav>
-          <button className="bg-gymrose h-20 w-40 text-white fixed right-0 hidden sm:block sm:hover:bg-black duration-300">
-            Join Now
-          </button>
+          <Link to="/membership" className="fixed right-0">
+            <button className="bg-gymrose h-20 w-40 text-white  hidden sm:block sm:hover:bg-black duration-300">
+              Join Now
+            </button>
+          </Link>
         </motion.header>
       )}
     </AnimatePresence>

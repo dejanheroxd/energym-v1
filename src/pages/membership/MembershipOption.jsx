@@ -18,7 +18,7 @@ function MembershipOption({ rarity, price, duration, popular }) {
         </div>
         <p className="text-sm pb-4 2xl:pb-6 2xl:pt-4">{duration}</p>
         <Link to="/contact">
-          <button className="py-3 border px-16 text-white bg-gymrose">
+          <button className="py-3 px-16 text-white duration-200 bg-gymrose sm:hover:bg-gymrosedark">
             Select
           </button>
         </Link>
