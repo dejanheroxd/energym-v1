@@ -26,7 +26,7 @@ function HeroSection() {
             The fitness facility for all of your needs
           </h2>
           <div>
-            <Link to="/membership">
+            <Link aria-label="Go to membership page" to="/membership">
               <button
                 aria-label="Button"
                 className="mt-9 border border-white text-black text-sm px-10 py-4 rounded-full bg-white duration-200 xl:px-12 xl:py-5 xl:hover:bg-transparent xl:hover:text-white xl:hover:border-white xl:hover:border "

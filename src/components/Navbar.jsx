@@ -140,7 +140,7 @@ function Navbar() {
           exit="exit"
           className="h-16 origin-top flex items-center fixed top-0 left-0 right-0 z-50 bg-white sm:flex sm:justify-center sm:h-20 sm:px-2  sm:items-center shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
         >
-          <Link to="/">
+          <Link aria-label="Go to home page" to="/">
             <p
               className="font-bold text-2xl sm:top-6 pl-3 2xl:pl-8 fixed top-4 sm:left-0 z-50"
               onClick={() => deactivateNav()}
@@ -187,14 +187,22 @@ function Navbar() {
                   >
                     <div className="overflow-hidden lg:hover:text-gymrose duration-300">
                       <motion.li variants={mobileLinksVars}>
-                        <NavLink onClick={() => deactivateNav()} to="about">
+                        <NavLink
+                          aria-label="Go to about page"
+                          onClick={() => deactivateNav()}
+                          to="about"
+                        >
                           ABOUT
                         </NavLink>
                       </motion.li>
                     </div>
                     <div className="overflow-hidden lg:hover:text-gymrose duration-300">
                       <motion.li variants={mobileLinksVars}>
-                        <NavLink onClick={() => deactivateNav()} to="services">
+                        <NavLink
+                          aria-label="Go to services page"
+                          onClick={() => deactivateNav()}
+                          to="services"
+                        >
                           SERVICES
                         </NavLink>
                       </motion.li>
@@ -202,6 +210,7 @@ function Navbar() {
                     <div className="overflow-hidden lg:hover:text-gymrose duration-300">
                       <motion.li variants={mobileLinksVars}>
                         <NavLink
+                          aria-label="Go to membership page"
                           onClick={() => deactivateNav()}
                           to="membership"
                         >
@@ -211,7 +220,11 @@ function Navbar() {
                     </div>
                     <div className="overflow-hidden lg:hover:text-gymrose duration-300">
                       <motion.li variants={mobileLinksVars}>
-                        <NavLink onClick={() => deactivateNav()} to="contact">
+                        <NavLink
+                          aria-label="Go to contact page"
+                          onClick={() => deactivateNav()}
+                          to="contact"
+                        >
                           CONTACT
                         </NavLink>
                       </motion.li>
@@ -221,7 +234,11 @@ function Navbar() {
               )}
             </AnimatePresence>
           </nav>
-          <Link to="/membership" className="fixed right-0">
+          <Link
+            aria-label="Go to membership page"
+            to="/membership"
+            className="fixed right-0"
+          >
             <button
               aria-label="Button"
               className="bg-gymrose h-20 w-40 text-white  hidden sm:block sm:hover:bg-black duration-300"

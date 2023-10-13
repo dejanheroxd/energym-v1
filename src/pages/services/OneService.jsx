@@ -29,7 +29,7 @@ function OneService(props) {
             <p>{hour} hr</p>
             <p className="pb-4">${price}</p>
           </div>
-          <Link to="/contact">
+          <Link aria-label="Go to contact page" to="/contact">
             <button
               aria-label="Button"
               className="w-full py-2 duration-500 text-white rounded-full bg-gymrose lg:w-28 sm:hover:bg-gymrosedark"
