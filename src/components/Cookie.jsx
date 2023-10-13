@@ -1,7 +1,10 @@
 import { X } from "phosphor-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Cookie() {
+  const [t] = useTranslation("global");
+
   const [cookieVisible, setCookieVisible] = useState(true);
 
   function onCookieClick() {
@@ -13,22 +16,20 @@ function Cookie() {
       <div className=" w-full  fixed bg-white bottom-0 h-64 flex justify-center">
         <div className=" w-80 h-full flex flex-col pt-10 lg:items-center lg:flex-row lg:w-[800px] lg:justify-between">
           <p className="text-gray-600 pb-6 text-sm lg:w-80">
-            By clicking “Accept All Cookies”, you agree to the storing of
-            cookies on your device to enhance site navigation, analyze site
-            usage, and assist in our marketing efforts.{" "}
+            {t("cookie.header")}
           </p>
           <div className="flex flex-col gap-y-2 lg:w-80 lg:justify-center">
             <button
               onClick={() => onCookieClick()}
               className="bg-gymrose text-white py-2"
             >
-              Reject All
+              {t("cookie.reject")}
             </button>
             <button
               onClick={() => onCookieClick()}
               className="bg-gymrose text-white py-2"
             >
-              Accept All Cookies
+              {t("cookie.accept")}
             </button>
           </div>
         </div>
