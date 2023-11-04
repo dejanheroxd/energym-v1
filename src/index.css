@@ -47,3 +47,63 @@ body {
   background-position: 40% center;
   background-repeat: no-repeat;
 } */
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  padding-bottom: 11rem;
+  width: 100vw;
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+.scroll {
+  white-space: nowrap;
+  margin: 0 2em;
+  width: 100vw;
+}
+
+.scroll div {
+  display: flex;
+  gap: 13.83em;
+  width: 100vw;
+}
+
+.scroll p {
+  font-size: 4.6em;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 10px;
+}
+
+.RightToLeft {
+  animation: RightToLeft 5s infinite linear;
+  width: 100vw;
+}
+
+@keyframes RightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.LeftToRight {
+  animation: LeftToRight 5s infinite linear;
+  width: 100vw;
+  display: flex;
+  gap: 5rem;
+}
+
+@keyframes LeftToRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

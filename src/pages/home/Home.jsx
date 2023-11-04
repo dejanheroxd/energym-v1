@@ -2,6 +2,7 @@
 
 import ClassesSection from "./ClassesSection";
 import HeroSection from "./HeroSection";
+import InfiniteText from "./InfiniteText";
 import MotivationalBanner from "./MotivationalBanner";
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
     <>
       <HeroSection />
       <MotivationalBanner />
+      <InfiniteText />
       <ClassesSection />
     </>
   );

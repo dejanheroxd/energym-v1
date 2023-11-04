@@ -5,6 +5,7 @@ import manWoman from "../../assets/man-woman-min.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 function MotivationalBanner() {
   const [t] = useTranslation("global");
@@ -29,7 +30,15 @@ function MotivationalBanner() {
               />
             </div>
             <div className="text-center xl:text-left lg:text-left pb-4 h-96 xl:h-full flex lg:h-full flex-col justify-center px-4 items-center">
-              <div className="w-80 xl:w-[500px] lg:w-[300px]">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 1, delay: 0.3 },
+                }}
+                viewport={{ once: true }}
+                className="w-80 xl:w-[500px] lg:w-[300px]"
+              >
                 <p className="font-semibold text-2xl xl:text-3xl">
                   {t("motivation.header")}
                 </p>
@@ -37,7 +46,7 @@ function MotivationalBanner() {
                 <Link aria-label="Go to about page" to="/about">
                   <Button className="border">{t("motivation.motCta")}</Button>
                 </Link>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -52,7 +61,15 @@ function MotivationalBanner() {
               />
             </div>
             <div className="text-center lg:h-full pb-4 xl:text-left lg:text-left h-96 flex flex-col justify-center order-1 px-4 items-center">
-              <div className="w-80 xl:w-[500px] lg:w-[300px]">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 1, delay: 0.3 },
+                }}
+                viewport={{ once: true }}
+                className="w-80 xl:w-[500px] lg:w-[300px]"
+              >
                 <p className="font-semibold text-2xl">
                   {t("motivationSecond.header")}
                 </p>
@@ -62,7 +79,7 @@ function MotivationalBanner() {
                     {t("motivationSecond.motCta")}
                   </Button>
                 </Link>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
