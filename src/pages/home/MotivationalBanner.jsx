@@ -65,7 +65,7 @@ function MotivationalBanner() {
                 initial={{ opacity: 0 }}
                 whileInView={{
                   opacity: 1,
-                  transition: { duration: 1, delay: 0.3 },
+                  transition: { duration: 1, delay: 0.3001 },
                 }}
                 viewport={{ once: true }}
                 className="w-80 xl:w-[500px] lg:w-[300px]"
