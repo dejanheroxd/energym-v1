@@ -246,7 +246,7 @@ function Navbar() {
           >
             <button
               aria-label="Button"
-              className="bg-[#d400ff] h-20 w-40 text-white  hidden sm:block sm:hover:bg-black duration-300"
+              className="bg-gymrose h-20 w-40 text-white  hidden sm:block sm:hover:bg-black duration-300"
             >
               {t("navigation.navCta")}
             </button>
