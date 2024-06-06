@@ -1,7 +1,7 @@
 import Button from "../../components/Button";
-import joggingManDesktop from "../../assets/jogging-man-neon-cop-min.jpg";
+import joggingManDesktop from "../../assets/deadlift1.jpg";
 import joggingManMobile from "../../assets/jogging-man-neon-short-min.jpg";
-import manWoman from "../../assets/man-woman-min.jpg";
+import manWoman from "../../assets/dumbell1.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -12,7 +12,7 @@ function MotivationalBanner() {
 
   return (
     <div className="relative lg:h-[1290px]">
-      <div className="lg:grid-row-2 lg:grid lg:mx-20 lg:absolute bg-white lg:w-[92%] xl:h-[1200px] lg:top-[-160px]">
+      <div className="lg:grid-row-2 lg:grid lg:mx-20 lg:absolute bg-white lg:w-[92%] xl:h-[1300px] lg:top-[-160px]">
         <div className="h-[770px] lg:h-full">
           <div className="lg:grid grid-cols-2">
             <div className="h-96 lg:h-[640px] overflow-hidden">
@@ -51,8 +51,35 @@ function MotivationalBanner() {
           </div>
         </div>
         <div className="h-[770px] lg:h-full">
-          <div className="lg:grid grid-cols-2">
-            <div className="h-96 lg:h-[640px] overflow-hidden order-2">
+          <div className="lg:grid grid-cols-2 ">
+            <svg
+              width="354"
+              height="366"
+              viewBox="0 0 454 966"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="absolute -bottom-36 rotate-180 right-0 z-[40]"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M0 257.6L227 0L454 257.6L397.25 322L227 128.8L56.75 322L0 257.6Z"
+                fill="#AFC92B"
+              />
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M0 901.6L227 644L454 901.6L397.25 966L227 772.8L56.75 966L0 901.6Z"
+                fill="#AFC92B"
+              />
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M0 579.6L227 322L454 579.6L397.25 644L227 450.8L56.75 644L0 579.6Z"
+                fill="#AFC92B"
+              />
+            </svg>
+            <div className="h-96 lg:h-[661px] overflow-hidden order-2">
               <LazyLoadImage
                 loading="lazy"
                 className="object-cover scale-[1.43] -translate-x-[35px] hue-rotate-[340deg] h-full w-full"
@@ -70,7 +97,7 @@ function MotivationalBanner() {
                 viewport={{ once: true }}
                 className="w-80 xl:w-[500px] lg:w-[300px]"
               >
-                <p className="font-semibold text-2xl">
+                <p className="font-semibold text-2xl xl:text-3xl">
                   {t("motivationSecond.header")}
                 </p>
                 <p className="mt-5">{t("motivationSecond.subText")}</p>

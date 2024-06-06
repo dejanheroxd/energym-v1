@@ -5,7 +5,7 @@ import Safety from "./Safety";
 function Footer() {
   return (
     <div>
-      <div className="lg:grid grid-cols-3  text-center lg:text-left lg:mb-10  pt-12 h-[590px]">
+      <div className="lg:grid grid-cols-3 text-white text-center lg:text-left lg:mb-10  pt-12 h-[590px]">
         <div>
           <div className=" flex justify-center">
             <div className=" flex justify-center flex-col lg:mt-36 ">

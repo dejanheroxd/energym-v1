@@ -40,7 +40,7 @@ function Services() {
             <option>Powerlifting</option>
           </select>
         </div>
-        <div className="hidden 2xl:flex 2xl:justify-center 2xl:pt-20">
+        <div className="hidden text-white 2xl:flex 2xl:justify-center 2xl:pt-20">
           <div className="hidden 2xl:flex 2xl:hover:cursor-pointer">
             <button
               aria-label="Button"
@@ -48,7 +48,7 @@ function Services() {
               value="Cardio Class"
               className={`${
                 selects === "Cardio Class"
-                  ? "2xl:border-b-[3px] 2xl:border-gymrose"
+                  ? "2xl:border-b-[3px] 2xl:border-gymGreen"
                   : ""
               } 2xl:border-b 2xl:border-gray-300 2xl:w-[299px] 2xl:pb-3 2xl:text-center`}
             >
@@ -60,7 +60,7 @@ function Services() {
               value="Muscle Building"
               className={`${
                 selects === "Muscle Building"
-                  ? "2xl:border-b-[3px] 2xl:border-gymrose"
+                  ? "2xl:border-b-[3px] 2xl:border-gymGreen"
                   : ""
               } 2xl:border-b 2xl:border-gray-300 2xl:w-[299px] 2xl:pb-3 2xl:text-center`}
             >
@@ -72,7 +72,7 @@ function Services() {
               value="Powerlifting"
               className={`${
                 selects === "Powerlifting"
-                  ? "2xl:border-b-[3px] 2xl:border-gymrose"
+                  ? "2xl:border-b-[3px] 2xl:border-gymGreen"
                   : ""
               } 2xl:border-b 2xl:border-gray-300 2xl:w-[299px] 2xl:pb-3 2xl:text-center`}
             >

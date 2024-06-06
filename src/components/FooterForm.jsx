@@ -54,7 +54,7 @@ function FooterForm() {
                 id="email"
                 type="email"
                 name="email"
-                className="border-b-black border-b outline-none text-center w-72 pb-2 pt-2 text-sm"
+                className="border-b-black border-b outline-none text-center w-72 pb-2 mb-1 pt-2 text-sm"
               />
             </div>
             <ValidationError
@@ -63,7 +63,7 @@ function FooterForm() {
               errors={state.errors}
             />
             <label htmlFor="message" className="text-xs">
-              {t("form.message")}
+              {/* {t("form.message")} */}
             </label>
             <textarea
               id="message"
@@ -84,7 +84,7 @@ function FooterForm() {
             disabled={state.submitting}
             className={`${
               state.succeeded ? "bg-gray-900" : ""
-            } px-20 py-3 duration-500 text-white sm:hover:bg-gymrosedark rounded-full bg-gymrose`}
+            } px-20 py-3 duration-500 text-white sm:hover:bg-gymGreen rounded-full bg-gymGreen`}
           >
             {state.succeeded ? (
               <ArrowCounterClockwise size={20} />

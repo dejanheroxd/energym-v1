@@ -8,7 +8,7 @@ function OneService(props) {
 
   return (
     <div className="flex justify-center pt-8 pb-8">
-      <div className="w-[320px] border border-black flex flex-col items-center lg:flex-row lg:w-[800px] lg:h-[430px] 2xl:w-[900px]">
+      <div className="w-[320px] border border-gymGreen text-white flex flex-col items-center lg:flex-row lg:w-[800px] lg:h-[430px] 2xl:w-[900px]">
         <div className="overflow-hidden h-52 w-full lg:w-[400px] lg:h-full 2xl:w-[450px]">
           <img src={classImage} alt="" className="object-cover h-full w-full" />
         </div>
@@ -35,7 +35,7 @@ function OneService(props) {
           <Link aria-label="Go to contact page" to="/contact">
             <button
               aria-label="Button"
-              className="w-full py-2 duration-500 text-white rounded-full bg-gymrose lg:w-28 sm:hover:bg-gymrosedark"
+              className="w-full py-2 duration-500 text-white rounded-full bg-gymGreen lg:w-28 sm:hover:bg-gymGreen"
             >
               Book Now
             </button>

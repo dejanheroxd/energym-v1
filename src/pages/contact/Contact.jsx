@@ -6,7 +6,7 @@ function Contact() {
 
   return (
     <>
-      <div className="text-center h-24 lg:h-40 xl:h-60 bg-gymblue text-white flex justify-center items-center">
+      <div className="text-center h-24 lg:h-40 xl:h-60 bg-gymGreen text-white flex justify-center items-center">
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, transition: { duration: 1 } }}

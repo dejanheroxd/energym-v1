@@ -28,7 +28,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <div className="pt-16 lg:overflow-hidden">
+    <div className="pt-[80px] bg-[#151515] lg:overflow-hidden">
       <Router>
         <NavBar />
         <ScrollToTop />

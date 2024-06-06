@@ -8,7 +8,7 @@ function MembershipOption({ rarity, price, duration, popular }) {
     <div className="flex flex-col px-5 2xl:px-14 justify-center items-center pt-10 ">
       <div className="border h-80 2xl:h-[380px] px-8 py-8 text-center relative w-80 flex xl:bg-white flex-col border-black">
         {popular && (
-          <div className="bg-gymblue xl:border xl:border-black text-white w-32 h-10 flex absolute -top-5 left-24 items-center justify-center">
+          <div className="bg-[#68c6eb] xl:border xl:border-black text-white w-32 h-10 flex absolute -top-5 left-24 items-center justify-center">
             <p>Most Popular</p>
           </div>
         )}
@@ -23,7 +23,7 @@ function MembershipOption({ rarity, price, duration, popular }) {
         <Link aria-label="Go to contact page" to="/contact">
           <button
             aria-label="Button"
-            className="py-3 px-16 text-white duration-200 bg-gymrose sm:hover:bg-gymrosedark"
+            className="py-3 px-16 text-white duration-200 bg-gymGreen sm:hover:bg-gymGreen"
           >
             {t("member.selectBtn")}
           </button>

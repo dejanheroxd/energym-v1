@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 function SectionHeaderBlock({ header, description, overflow }) {
   return (
     <div
-      className={`bg-gymblue text-white flex justify-center py-9 xl:py-32 px-6 ${
+      className={`bg-gymGreen text-white flex justify-center py-9 xl:py-32 px-6 ${
         overflow ? "lg:pb-60 xl:pb-60" : ""
       }`}
     >

@@ -35,13 +35,13 @@ function Cookie() {
             <div className="flex flex-col gap-y-2 lg:w-80 lg:justify-center">
               <button
                 onClick={() => onCookieClick()}
-                className="bg-gymrose text-white py-2"
+                className="bg-gymGreen text-white py-2"
               >
                 {t("cookie.reject")}
               </button>
               <button
                 onClick={() => onCookieClick()}
-                className="bg-gymrose text-white py-2"
+                className="bg-gymGreen text-white py-2"
               >
                 {t("cookie.accept")}
               </button>

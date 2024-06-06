@@ -10,7 +10,7 @@ function ClassesSection() {
   const [t] = useTranslation("global");
 
   return (
-    <div className="border-none  bg-gymblue flex justify-center text-center pb-9">
+    <div className="border-none  bg-gymGreen flex justify-center text-center pb-9">
       <div className="w-72 pt-10 flex flex-col justify-center items-center">
         <motion.p
           initial={{ opacity: 0 }}
