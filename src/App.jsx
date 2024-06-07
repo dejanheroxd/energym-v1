@@ -1,3 +1,4 @@
+// App.js
 import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
@@ -13,13 +14,11 @@ import Services from "./pages/services/Services";
 import Contact from "./pages/contact/Contact";
 import BackToTopButton from "./components/BackToTopButton";
 import Footer from "./components/Footer";
-import useLocomotiveScroll from "./components/useLocomotiveScroll";
-// import Cookie from "./components/Cookie";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
@@ -28,7 +27,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <div className="pt-[80px] bg-[#151515] lg:overflow-hidden">
+    <div className="pt-[80px] bg-[#151515]">
       <Router>
         <NavBar />
         <ScrollToTop />
@@ -41,7 +40,6 @@ function App() {
         </Routes>
         <BackToTopButton />
         <Footer />
-        {/* <Cookie /> */}
       </Router>
     </div>
   );

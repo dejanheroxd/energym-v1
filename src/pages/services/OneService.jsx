@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 function OneService(props) {
   const [t] = useTranslation("global");
 
-  const { oneClassName, classImage, hour, price, description } = props.data;
+  const { data, openPopUp } = props;
+
+  const { oneClassName, classImage, description, hour, hour2, price } = data;
 
   return (
     <div className="flex justify-center pt-8 pb-8">
@@ -19,25 +21,27 @@ function OneService(props) {
           <div className="pt-1 pb-4">
             <span className="h-[1px] bg-gray-400 w-60 block"></span>
           </div>
-          <div className="flex flex-col gap-y-1">
-            <div className="flex gap-x-[6px]">
-              <p>{t("services.day1")}, </p>
-              <p>{t("services.day2")}, </p>
-              <p>{t("services.day3")}, </p>
-              <p>{t("services.day4")}, </p>
-              <p>{t("services.day5")}, </p>
+          {/* <div className="flex flex-col gap-y-1">
+            <div className="flex flex-col gap-x-[6px]">
+              <div className="flex gap-2">
+                <p>{t("services.day1")} </p>
+                {hour}, {hour2}
+              </div>
+              <div className="flex gap-3">
+                <p>{t("services.day5")}</p>
+                {hour}
+              </div>
             </div>
-            <p>
-              {hour} {t("services.hour")}
-            </p>
+
             <p className="pb-4">${price}</p>
-          </div>
-          <Link aria-label="Go to contact page" to="/contact">
+          </div> */}
+          <Link aria-label="Go to contact page">
             <button
+              onClick={() => openPopUp()}
               aria-label="Button"
               className="w-full py-2 duration-500 text-white rounded-full bg-gymGreen lg:w-28 sm:hover:bg-gymGreen"
             >
-              Book Now
+              Προγραμμα
             </button>
           </Link>
         </div>

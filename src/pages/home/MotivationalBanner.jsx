@@ -6,7 +6,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-
 function MotivationalBanner() {
   const [t] = useTranslation("global");
 
@@ -65,6 +64,8 @@ function MotivationalBanner() {
                 clipRule="evenodd"
                 d="M0 257.6L227 0L454 257.6L397.25 322L227 128.8L56.75 322L0 257.6Z"
                 fill="#AFC92B"
+                data-scroll
+                data-scroll-speed={-0.4}
               />
               <path
                 fillRule="evenodd"

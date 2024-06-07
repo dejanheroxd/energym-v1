@@ -1,14 +1,27 @@
+// components/useLocomotiveScroll.js
 import { useEffect } from "react";
+import LocomotiveScroll from "locomotive-scroll";
+// import "locomotive-scroll/src/locomotive-scroll.scss";
 
-export default function useLocomotiveScroll() {
+const useLocomotiveScroll = () => {
   useEffect(() => {
-    const initLocomotiveScroll = async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
+    const scrollContainer = document.querySelector("[data-scroll-container]");
+    if (!scrollContainer) return;
 
-      document.body.style.cursor = "default";
+    const locomotiveScroll = new LocomotiveScroll({
+      el: scrollContainer,
+      smooth: true,
+      lerp: 0.001, // Adjust this value to control the scroll speed. Lower is slower.
+    });
+
+    locomotiveScroll.on("scroll", () => {
+      // Update something on scroll if needed
+    });
+
+    return () => {
+      locomotiveScroll.destroy();
     };
-
-    initLocomotiveScroll();
   }, []);
-}
+};
+
+export default useLocomotiveScroll;

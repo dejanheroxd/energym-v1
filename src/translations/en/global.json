@@ -1,8 +1,8 @@
 {
   "navigation": {
-    "navItemFirst": "ABOUT",
-    "navItemSecond": "SERVICES",
-    "navItemThird": "MEMBERSHIP",
+    "navItemFirst": "HOME",
+    "navItemSecond": "ABOUT",
+    "navItemThird": "SERVICES",
     "navItemFourth": "CONTACT",
     "navCta": "Join Now"
   },
@@ -52,6 +52,7 @@
     "classOneDes": "Our tailored cardio training brings out your inner champion. Achieve peak health while having fun on your fitness journey.",
     "classTwoDes": "Transform your physique with our exclusive muscle-building program. Join us to experience the journey of a lifetime. Discover the power within you!",
     "classThreeDes": "Unlock your potential with powerlifting. Strength, determination, and success are just a lift away.",
+    "classFourDes": "Unlock your potential with powerlifting. Strength, determination, and success are just a lift away.",
     "read": "Read More",
     "day1": "Mon",
     "day2": "Tue",

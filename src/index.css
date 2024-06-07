@@ -72,7 +72,7 @@ body {
 
 .scroll p {
   font-size: 4.6em;
-  color: black;
+  /* color: black; */
   font-weight: bold;
   margin-bottom: 0;
   line-height: 10px;
@@ -81,6 +81,7 @@ body {
 .RightToLeft {
   animation: RightToLeft 5s infinite linear;
   width: 100vw;
+  color: white;
 }
 
 @keyframes RightToLeft {
@@ -97,6 +98,7 @@ body {
   width: 100vw;
   display: flex;
   gap: 5rem;
+  color: white;
 }
 
 @keyframes LeftToRight {

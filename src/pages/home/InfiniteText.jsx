@@ -2,7 +2,7 @@ import React from "react";
 
 export default function InfiniteText() {
   return (
-    <div className="w-screen flex justify-center">
+    <div className="w-screen text-white flex justify-center">
       <div className="container w-screen">
         <div className="scroll">
           <div className="RightToLeft mb-16">

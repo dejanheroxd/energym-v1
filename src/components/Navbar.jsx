@@ -221,11 +221,22 @@ function Navbar() {
                     <div className="overflow-hidden text-white lg:hover:text-gymGreen duration-300">
                       <motion.li variants={mobileLinksVars}>
                         <NavLink
+                          aria-label="Go to services page"
+                          onClick={() => deactivateNav()}
+                          to="/"
+                        >
+                          {t("navigation.navItemFirst")}
+                        </NavLink>
+                      </motion.li>
+                    </div>
+                    <div className="overflow-hidden text-white lg:hover:text-gymGreen duration-300">
+                      <motion.li variants={mobileLinksVars}>
+                        <NavLink
                           aria-label="Go to about page"
                           onClick={() => deactivateNav()}
                           to="about"
                         >
-                          {t("navigation.navItemFirst")}
+                          {t("navigation.navItemSecond")}
                         </NavLink>
                       </motion.li>
                     </div>
@@ -236,11 +247,11 @@ function Navbar() {
                           onClick={() => deactivateNav()}
                           to="services"
                         >
-                          {t("navigation.navItemSecond")}
+                          {t("navigation.navItemThird")}
                         </NavLink>
                       </motion.li>
                     </div>
-                    <div className="overflow-hidden text-white lg:hover:text-gymGreen duration-300">
+                    {/* <div className="overflow-hidden text-white lg:hover:text-gymGreen duration-300">
                       <motion.li variants={mobileLinksVars}>
                         <NavLink
                           aria-label="Go to membership page"
@@ -250,7 +261,7 @@ function Navbar() {
                           {t("navigation.navItemThird")}
                         </NavLink>
                       </motion.li>
-                    </div>
+                    </div> */}
                     <div className="overflow-hidden text-white lg:hover:text-gymGreen duration-300">
                       <motion.li variants={mobileLinksVars}>
                         <NavLink

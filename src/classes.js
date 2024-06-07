@@ -1,33 +1,44 @@
-import cardio from "./assets/cardio-min-p.jpg";
-import muscle from "./assets/muscle.jpg";
-import strength from "./assets/strength.jpg";
+import actionfit from "./assets/actionfit.jpg";
+import yogalates from "./assets/yogalates.jpg";
+import crosstraining from "./assets/crosstraining.jpg";
+import powerband from "./assets/powerband.jpg";
 
 export const CLASSES = [
   {
     id: 1,
-    oneClassName: "Cardio Class",
-    classImage: cardio,
-    hour: 2,
+    oneClassName: "ACTIONFIT",
+    classImage: actionfit,
+    hour: "10:00 - 11:00",
+    hour2: "18:00 - 19:00",
     price: 25,
     description:
-      "Our tailored cardio training brings out your inner champion. Achieve peak health while having fun on your fitness journey.",
+      "Βελτιώστε τη φυσική σας κατάσταση με προπονήσεις υψηλής ενέργειας που συνδυάζουν καρδιο, δύναμη και ευλυγισία",
   },
   {
     id: 2,
-    oneClassName: "Muscle Building",
-    classImage: muscle,
+    oneClassName: "YOGALATES",
+    classImage: yogalates,
     hour: 2,
     price: 25,
     description:
-      "Transform your physique with our exclusive muscle-building program. Join us to experience the journey of a lifetime. Discover the power within you!",
+      "Εναρμονίστε σώμα και πνεύμα με συνδυαστικές ασκήσεις γιόγκα και πιλάτες. Ενισχύστε τη στάση και την αναπνοή σας",
   },
   {
     id: 3,
-    oneClassName: "Powerlifting",
-    classImage: strength,
+    oneClassName: "CROSS TRAINING",
+    classImage: crosstraining,
     hour: 1,
     price: 20,
     description:
-      "Unlock your potential with powerlifting. Strength, determination, and success are just a lift away.",
+      "Βελτιώστε τη φυσική σας κατάσταση με ποικιλία ασκήσεων αντοχής και δύναμης. Ιδανικό για ενδυνάμωση και αντοχή",
+  },
+  {
+    id: 4,
+    oneClassName: "POWERBAND",
+    classImage: powerband,
+    hour: 1,
+    price: 20,
+    description:
+      "Αναβαθμίστε την προπόνησή σας με τη χρήση λάστιχων αντίστασης για ολόκληρο το σώμα. Κατάλληλο για ενίσχυση, ευλυγισία και βελτίωση της σταθερότητας",
   },
 ];
