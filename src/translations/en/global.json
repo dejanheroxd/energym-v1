@@ -4,7 +4,7 @@
     "navItemSecond": "ABOUT",
     "navItemThird": "SERVICES",
     "navItemFourth": "CONTACT",
-    "navCta": "Join Now"
+    "navCta": "Contact Us"
   },
   "hero": {
     "header": "Welcome to ",
@@ -18,7 +18,7 @@
   "motivationSecond": {
     "header": "Fitness Is for Everyone",
     "subText": "We passionately believe that fitness is a journey meant for everyone. Whether you're an experienced athlete or taking your first steps towards a healthier lifestyle, our gym welcomes individuals of all backgrounds and fitness levels.",
-    "motCta": "Reserve a Spot"
+    "motCta": "Our Services"
   },
   "classes": {
     "header": "Class Schedule",

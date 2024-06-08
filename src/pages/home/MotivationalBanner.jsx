@@ -101,7 +101,7 @@ function MotivationalBanner() {
                   {t("motivationSecond.header")}
                 </p>
                 <p className="mt-5">{t("motivationSecond.subText")}</p>
-                <Link aria-label="Go to membership page" to="/membership">
+                <Link aria-label="Go to services page" to="/services">
                   <Button className="border">
                     {t("motivationSecond.motCta")}
                   </Button>
