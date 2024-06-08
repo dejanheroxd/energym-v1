@@ -9,7 +9,13 @@ function HeroSection() {
 
   return (
     <div className="relative justify-center overflow-hidden items-center h-[105vh] w-screen flex-row flex">
-      <svg
+      <motion.svg
+        initial={{ opacity: 0, y: "20px" }}
+        animate={{
+          opacity: 1,
+          y: "0px",
+          transition: { duration: 0.5, delay: 3.2 },
+        }}
         width="354"
         height="366"
         viewBox="0 0 454 966"
@@ -35,7 +41,7 @@ function HeroSection() {
           d="M0 579.6L227 322L454 579.6L397.25 644L227 450.8L56.75 644L0 579.6Z"
           fill="#AFC92B"
         />
-      </svg>
+      </motion.svg>
 
       <picture>
         <img
@@ -53,7 +59,7 @@ function HeroSection() {
         <div className="h-96 w-80 md:w-[350px] lg:w-[1400px] 2xl:w-[2000px] xl:w-[850px] text-center">
           <motion.h1
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 1.5, delay: 0.5 } }}
+            animate={{ opacity: 1, transition: { duration: 1.5, delay: 2.2 } }}
             className="text-white origin-bottom font-semibold w-[330px] md:w-full text-5xl xl:text-6xl 2xl:text-[6rem]"
           >
             <div className="flex w-full justify-center">
@@ -92,7 +98,7 @@ function HeroSection() {
           </motion.h1>
           <motion.h2
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 1.5, delay: 1 } }}
+            animate={{ opacity: 1, transition: { duration: 1.5, delay: 2.5 } }}
             className="text-white font-semibold text-2xl 2xl:text-3xl"
           >
             {t("hero.subheader")}
@@ -103,7 +109,7 @@ function HeroSection() {
                 initial={{ opacity: 0 }}
                 animate={{
                   opacity: 1,
-                  transition: { duration: 1.5, delay: 1.5 },
+                  transition: { duration: 1.5, delay: 2.8 },
                 }}
                 aria-label="Button"
                 className="mt-9 border border-gymGreen bg-gymGreen text-white text-sm px-10 py-4 rounded-full  duration-200 xl:px-12 xl:py-5 xl:hover:bg-transparent"

@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="Vector2" width="1734" height="309" viewBox="0 0 1734 309" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+<path d="M626.222 186.5L1 308L961.609 254L918.56 169.5L1414.63 108.5L1393.11 67.5L1711.48 51L1733 1L1197.38 31.5L1225.91 67.5L592.683 96L626.222 186.5Z" stroke="#AFC92B" stroke-miterlimit="1" stroke-dasharray="0,0,0,3926.025390625"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="2.5s" values="0,0,0,3926.025390625; 
+          0,1963.0126953125,1963.0126953125,0; 
+          3926.025390625,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+</svg>

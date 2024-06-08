@@ -143,7 +143,7 @@ function Navbar() {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="h-16 origin-top flex items-center fixed top-0 left-0 right-0 z-50 bg-black/40 sm:flex sm:justify-center sm:h-20 sm:px-2  sm:items-center shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+          className="h-16 origin-top flex items-center fixed top-0 left-0 right-0 z-50 bg-black/60 sm:flex sm:justify-center sm:h-20 sm:px-2  sm:items-center shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
         >
           <Link aria-label="Go to home page" to="/">
             <div
