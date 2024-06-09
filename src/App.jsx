@@ -39,7 +39,7 @@ function App() {
   return (
     <>
       {loading && (
-        <div className="bg-gray-950 z-[200] fixed top-0 flex flex-col justify-center items-center left-0 right-0 bottom-0 h-full w-full">
+        <div className="bg-[#0A0A0A] z-[200] fixed top-0 flex flex-col justify-center items-center left-0 right-0 bottom-0 h-full w-full">
           <div className="h-[200px] relative">
             <div className="loader fixed bottom-[400px] left-[870px]"></div>
             <svg
@@ -89,7 +89,7 @@ function App() {
           </div>
         </div>
       )}
-      <div className="pt-[80px] bg-[#151515] lg:overflow-hidden">
+      <div className="lg:pt-[80px] pt-[64px] bg-[#0A0A0A] lg:overflow-hidden">
         <Router>
           <NavBar />
           <ScrollToTop />

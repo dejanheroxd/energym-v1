@@ -14,7 +14,7 @@ function About() {
       />
 
       <div className="lg:flex justify-center lg:relative lg:pb-[450px] 2xl:pb-[740px]">
-        <div className="pb-4 lg:pb-0 bg-white lg:flex 2xl:w-[1740px] lg:absolute lg:h-[550px] lg:top-[-150px] lg:gap-x-10 2xl:h-[850px]">
+        <div className="pb-10 lg:pb-0 bg-white lg:flex 2xl:w-[1740px] lg:absolute lg:h-[550px] lg:top-[-150px] lg:gap-x-10 2xl:h-[850px]">
           <div className="overflow-hidden h-80 sm:h-[480px] order-2 lg:w-[480px] 2xl:w-[875px] lg:h-full">
             <img src={family} alt="" className="h-full w-full object-cover" />
           </div>

@@ -9,6 +9,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   height: -webkit-fill-available;
+  background-color: #0a0a0a;
 }
 
 .active {
@@ -48,7 +49,7 @@ body {
   background-repeat: no-repeat;
 } */
 
-.container {
+/* .container {
   display: flex;
   align-items: center;
   height: 50vh;
@@ -56,7 +57,7 @@ body {
   width: 100vw;
   overflow: hidden;
   max-width: 100vw;
-}
+} */
 
 .scroll {
   white-space: nowrap;

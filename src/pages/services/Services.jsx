@@ -28,15 +28,15 @@ function Services() {
     <>
       {isOpen && (
         <div className="bg-black/60 fixed inset-0 z-[100] flex justify-center items-center">
-          <div className="bg-white relative w-[870px] h-[650px] rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+          <div className="bg-white relative w-[320px] h-[300px] lg:w-[870px] lg:h-[650px] rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
             <div
               onClick={() => closePopUp()}
-              className="absolute hover:cursor-pointer text-white bg-slate-950/90 w-8 h-8 rounded-full flex justify-center items-center right-[-40px] top-[-40px]"
+              className="absolute hover:cursor-pointer text-white lg:bg-slate-950/90 w-8 h-8 rounded-full flex justify-center items-center right-[0px] top-[0px] z-[100] lg:z-[10] bg-transparent lg:right-[-40px] lg:top-[-40px]"
             >
               <p>X</p>
             </div>
           </div>
-          <div className="bg-white overflow-hidden absolute w-[870px] h-[650px] rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+          <div className="bg-white overflow-hidden absolute w-[320px] h-[300px] lg:w-[870px] lg:h-[650px]  rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
             <img className="object-fill h-full w-full" src={program} alt="" />
           </div>
         </div>

@@ -143,7 +143,7 @@ function Navbar() {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="h-16 origin-top flex items-center fixed top-0 left-0 right-0 z-50 bg-black/60 sm:flex sm:justify-center sm:h-20 sm:px-2  sm:items-center shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+          className="h-16 origin-top flex items-center fixed top-0 left-0 right-0 z-50 bg-[#0A0A0A] sm:flex sm:justify-center sm:h-20 sm:px-2  sm:items-center shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
         >
           <Link aria-label="Go to home page" to="/">
             <div
@@ -188,13 +188,13 @@ function Navbar() {
           >
             <div>
               <span
-                className={`bg-black h-[3px] duration-300  w-7 block mb-1 ${
+                className={`bg-white lg:bg-black h-[3px] duration-300  w-7 block mb-1 ${
                   navActive ? "rotate-45 translate-y-1" : ""
                 }`}
               ></span>
 
               <span
-                className={`bg-black h-[3px] duration-300  w-7 block ${
+                className={`bg-white lg:bg-black h-[3px] duration-300  w-7 block ${
                   navActive ? "-rotate-45 translate-y-[-3px]" : ""
                 }`}
               ></span>
@@ -209,7 +209,7 @@ function Navbar() {
                   animate="animate"
                   exit="exit"
                   className="
-              sm:flex sm:relative origin-top sm:flex-row justify-center flex text-3xl sm:text-base text-center sm:pr-2 flex-col gap-y-7 sm:gap-x-3 bg-white top-0 right-0 bottom-0 z-40 left-0 py-40 px-8 sm:px-0 sm:py-0 sm:bg-opacity-0 sm:left-0 h-full fixed font-semibold"
+              sm:flex sm:relative origin-top sm:flex-row justify-center flex text-3xl sm:text-base text-center sm:pr-2 flex-col gap-y-7 sm:gap-x-3 bg-[#080808] top-0 right-0 bottom-0 z-40 left-0 py-40 px-8 sm:px-0 sm:py-0 sm:bg-opacity-0 sm:left-0 h-full fixed font-semibold"
                 >
                   <motion.div
                     variants={containerVars}

@@ -1,6 +1,6 @@
 import Button from "../../components/Button";
-import joggingManDesktop from "../../assets/deadlift1.jpg";
-import joggingManMobile from "../../assets/jogging-man-neon-short-min.jpg";
+import deadliftDesktop from "../../assets/deadlift1.jpg";
+import deadliftMobile from "../../assets/deadlift1.jpg";
 import manWoman from "../../assets/dumbell1.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
@@ -19,13 +19,13 @@ function MotivationalBanner() {
               <LazyLoadImage
                 loading="lazy"
                 className="object-cover h-full w-full hidden sm:block"
-                src={joggingManDesktop} // Default image for PC
+                src={deadliftDesktop} // Default image for PC
                 alt=""
               />
               <LazyLoadImage
                 loading="lazy"
                 className="object-cover h-full w-full sm:hidden"
-                src={joggingManMobile} // Mobile image
+                src={deadliftMobile} // Mobile image
                 alt=""
               />
             </div>
@@ -58,7 +58,7 @@ function MotivationalBanner() {
               viewBox="0 0 454 966"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute -bottom-36 rotate-180 right-0 z-[40]"
+              className="absolute -bottom-36 hidden xl:block rotate-180 right-0 z-[40]"
             >
               <path
                 fillRule="evenodd"

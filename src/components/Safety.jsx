@@ -4,12 +4,14 @@ function Safety() {
       <a href="" className="underline font-semibold">
         Safety Policies
       </a>
-      <p className="">
-        ©2023 by Energym. Powered and secured by{" "}
-        <a href="" className="underline">
-          React
-        </a>
-      </p>
+      <div className="w-full flex justify-center">
+        <p className="w-[280px] xl:w-full pt-2 xl:pt-0">
+          ©2023 by Energym. Powered and secured by{" "}
+          <a href="" className="underline">
+            React
+          </a>
+        </p>
+      </div>
     </div>
   );
 }

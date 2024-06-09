@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import neonLightDesktop from "../../assets/energymHome.jpg";
-import neonLightMobile from "../../assets/neon-light-mobile-min.jpg";
+import womenHeroSectionDesktop from "../../assets/energymHome.jpg";
+import womenHeroSectionMobile from "../../assets/energymHome2.jpg";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
@@ -21,7 +21,7 @@ function HeroSection() {
         viewBox="0 0 454 966"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute bottom-0 left-0 z-[40]"
+        className="absolute bottom-0 left-0 z-[40] hidden xl:block"
       >
         <path
           fillRule="evenodd"
@@ -45,14 +45,14 @@ function HeroSection() {
 
       <picture>
         <img
-          src={neonLightDesktop}
+          src={womenHeroSectionDesktop}
           alt="Background Image"
           className="absolute inset-0 brightness-[0.65] w-full h-full object-cover scale-[1] hidden sm:block"
         />
         <img
-          src={neonLightMobile}
+          src={womenHeroSectionMobile}
           alt="Background Image"
-          className="absolute inset-0 w-full h-full object-cover scale-[1] sm:hidden"
+          className="absolute inset-0 brightness-[0.65] w-full h-full object-cover scale-[1] sm:hidden"
         />
       </picture>
       <div className="absolute inset-0 flex items-center justify-center">
@@ -63,7 +63,9 @@ function HeroSection() {
             className="text-white origin-bottom font-semibold w-[330px] md:w-full text-5xl xl:text-6xl 2xl:text-[6rem]"
           >
             <div className="flex w-full justify-center">
-              {t("hero.header")}
+              <p className="hidden xl:block min-[1280px]:w-[700px] min-[1280px]:mt-[25px] 2xl:mt-0 2xl:w-[845px]">
+                {t("hero.header")}
+              </p>
               <svg
                 width="405"
                 height="170"
@@ -71,7 +73,7 @@ function HeroSection() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
-                className="pb-11"
+                className="lg:pb-11"
               >
                 <rect width="2116" height="664" fill="url(#pattern0_1_2)" />
                 <defs>
