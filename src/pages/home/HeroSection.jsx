@@ -186,7 +186,7 @@ function HeroSection() {
         />
       </picture>
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="h-96 w-80 md:w-[350px] lg:w-[1400px] 2xl:w-[2000px] xl:w-[850px] text-center">
+        <div className="h-96 w-80 md:w-[350px] lg:w-[1400px] mb-[95px]  2xl:w-[2000px] xl:w-[850px] text-center">
           <motion.h1
             initial={{ opacity: 0, y: "20px" }}
             animate={{
