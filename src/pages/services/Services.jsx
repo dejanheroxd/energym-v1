@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import OneService from "./OneService";
 import { CLASSES } from "../../classes";
 import SectionHeaderBlock from "../../components/SectionHeaderBlock";
@@ -24,20 +24,35 @@ function Services() {
     setSelects(service);
   }
 
+  let menuRef = useRef();
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef]);
+
   return (
     <>
       {isOpen && (
         <div className="bg-black/60 fixed inset-0 z-[100] flex justify-center items-center">
-          <div className="bg-white relative w-[320px] h-[300px] lg:w-[870px] lg:h-[650px] rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+          <div ref={menuRef} className="relative">
             <div
-              onClick={() => closePopUp()}
+              onClick={closePopUp}
               className="absolute hover:cursor-pointer text-white lg:bg-slate-950/90 w-8 h-8 rounded-full flex justify-center items-center right-[0px] top-[0px] z-[100] lg:z-[10] bg-transparent lg:right-[-40px] lg:top-[-40px]"
             >
               <p>X</p>
             </div>
-          </div>
-          <div className="bg-white overflow-hidden absolute w-[320px] h-[300px] lg:w-[870px] lg:h-[650px]  rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-            <img className="object-fill h-full w-full" src={program} alt="" />
+            <div className="bg-white overflow-hidden  w-[320px] h-[300px] lg:w-[870px] lg:h-[650px] rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+              <img className="object-fill h-full w-full" src={program} alt="" />
+            </div>
           </div>
         </div>
       )}

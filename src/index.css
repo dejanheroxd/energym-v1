@@ -79,35 +79,73 @@ body {
   line-height: 10px;
 }
 
-.RightToLeft {
-  animation: RightToLeft 5s infinite linear;
-  width: 100vw;
-  color: white;
-}
-
-@keyframes RightToLeft {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-37.3%);
-  }
-}
-
+/* Desktop animation */
+.RightToLeft,
 .LeftToRight {
-  animation: LeftToRight 5s infinite linear;
   width: 100vw;
-  display: flex;
-  gap: 5rem;
   color: white;
 }
 
-@keyframes LeftToRight {
-  from {
-    transform: translateX(-37.3%);
+@media (min-width: 401px) {
+  .RightToLeft {
+    animation: RightToLeftDesktop 8s infinite linear;
   }
-  to {
-    transform: translateX(0%);
+
+  @keyframes RightToLeftDesktop {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .LeftToRight {
+    animation: LeftToRightDesktop 8s infinite linear;
+  }
+
+  @keyframes LeftToRightDesktop {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+}
+
+/* Mobile animation */
+.RightToLeft,
+.LeftToRight {
+  width: 100vw;
+  color: white;
+}
+
+@media (max-width: 401px) {
+  .RightToLeft {
+    animation: RightToLeftDesktop 7s infinite linear;
+  }
+
+  @keyframes RightToLeftDesktop {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-160%);
+    }
+  }
+
+  .LeftToRight {
+    animation: LeftToRightDesktop 7s infinite linear;
+  }
+
+  @keyframes LeftToRightDesktop {
+    from {
+      transform: translateX(-160%);
+    }
+    to {
+      transform: translateX(0%);
+    }
   }
 }
 
