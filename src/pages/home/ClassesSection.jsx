@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import womanMatt from "../../assets/twol.jpg";
-import asian from "../../assets/dumbbells.jpg";
-import manStick from "../../assets/trainer.jpg";
+import womanMatt from "../../assets/twol-min.jpg";
+import asian from "../../assets/dumbbells-min.jpg";
+import manStick from "../../assets/trainer-min.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";

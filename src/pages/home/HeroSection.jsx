@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import womenHeroSectionDesktop from "../../assets/energymHome.jpg";
-import womenHeroSectionMobile from "../../assets/energymHome2.jpg";
+import womenHeroSectionDesktop from "../../assets/energymHome-min1.jpg";
+import womenHeroSectionMobile from "../../assets/energymHome-min2.jpg";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
