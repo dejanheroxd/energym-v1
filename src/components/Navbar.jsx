@@ -221,7 +221,7 @@ function Navbar() {
                     <div className="overflow-hidden text-white lg:hover:text-gymGreen duration-300">
                       <motion.li variants={mobileLinksVars}>
                         <NavLink
-                          aria-label="Go to services page"
+                          aria-label="Go to home page"
                           onClick={() => deactivateNav()}
                           to="/"
                         >
@@ -280,7 +280,7 @@ function Navbar() {
           </nav>
           <Link
             aria-label="Go to membership page"
-            to="/membership"
+            to="/contact"
             className="fixed right-0"
           >
             <button

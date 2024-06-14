@@ -244,7 +244,7 @@ function HeroSection() {
             {t("hero.subheader")}
           </motion.h2>
           <div>
-            <Link aria-label="Go to membership page" to="/membership">
+            <Link aria-label="Go to membership page" to="/contact">
               <motion.button
                 initial={{ opacity: 0, y: "20px" }}
                 animate={{
