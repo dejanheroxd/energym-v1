@@ -197,7 +197,7 @@ function HeroSection() {
             className="text-white origin-bottom font-semibold w-[330px] md:w-full text-5xl xl:text-6xl 2xl:text-[6rem]"
           >
             <div className="flex w-full justify-center">
-              <p className="hidden xl:block min-[1280px]:w-[700px] min-[1280px]:mt-[25px] 2xl:mt-0 2xl:w-[845px]">
+              <p className="hidden xl:block min-[1280px]:w-[700px] min-[1280px]:mt-[25px] 2xl:mt-0 2xl:w-[837px]">
                 {t("hero.header")}
               </p>
               <svg
