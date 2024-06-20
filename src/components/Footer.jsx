@@ -32,11 +32,7 @@ function Footer() {
                   >
                     <FacebookLogo size={26} />
                   </a>
-                  <a
-                    href="https://www.twitter.com/yourTwitterHandle"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a target="_blank" rel="noopener noreferrer">
                     <TwitterLogo size={26} />
                   </a>
                 </div>
