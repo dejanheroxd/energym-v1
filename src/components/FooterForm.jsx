@@ -36,6 +36,7 @@ function FooterForm() {
                 id="firstName"
                 type="firstName"
                 name="firstName"
+                placeholder="Όνομα"
                 className="border-b-black border-b outline-none text-center w-72 pb-2 pt-2 text-sm"
               />
             </div>
@@ -45,6 +46,7 @@ function FooterForm() {
                 id="lastName"
                 type="lastName"
                 name="lastName"
+                placeholder="Επώνυμο"
                 className="border-b-black border-b outline-none text-center w-72 pb-2 pt-2 text-sm"
               />
             </div>
@@ -54,6 +56,7 @@ function FooterForm() {
                 id="email"
                 type="email"
                 name="email"
+                placeholder="Email"
                 className="border-b-black border-b outline-none text-center w-72 pb-2 mb-1 pt-2 text-sm"
               />
             </div>
@@ -68,6 +71,7 @@ function FooterForm() {
             <textarea
               id="message"
               name="message"
+              placeholder="Το μήνυμά σας..."
               className="border-b-black border-b outline-none text-center w-72 h-28 pb-2 pt-2 text-sm"
             />
             <ValidationError
