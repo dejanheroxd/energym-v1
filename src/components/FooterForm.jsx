@@ -29,7 +29,7 @@ function FooterForm() {
         } flex  flex-col pt-7 items-center`}
       >
         {state.succeeded || (
-          <div>
+          <div className="text-black">
             <div className="flex flex-col items-center mb-3">
               <label htmlFor="firstnName">{t("form.firstName")}</label>
               <input
