@@ -6,7 +6,7 @@ function Safety() {
       </a>
       <div className="w-full flex justify-center">
         <p className="w-[280px] xl:w-full pt-2 xl:pt-0">
-          ©2023 by Energym. Powered and secured by{" "}
+          ©2024 by Energym. Powered and secured by{" "}
           <a href="" className="underline">
             React
           </a>
