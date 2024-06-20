@@ -18,9 +18,27 @@ function Footer() {
                 <p>energympreveza@gmail.com</p>
                 <p>2682 061195</p>
                 <div className="flex justify-center lg:justify-start gap-x-4">
-                  <InstagramLogo size={26} />
-                  <FacebookLogo size={26} />
-                  <TwitterLogo size={26} />
+                  <a
+                    href="https://www.instagram.com/energym_preveza/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <InstagramLogo size={26} />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/energympreveza?locale=el_GR"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FacebookLogo size={26} />
+                  </a>
+                  <a
+                    href="https://www.twitter.com/yourTwitterHandle"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <TwitterLogo size={26} />
+                  </a>
                 </div>
               </div>
             </div>
