@@ -10,7 +10,7 @@ function FooterForm() {
     <div className=" pt-10 lg:pt-0 px-6 text-center">
       {state.succeeded ? (
         <div>
-          {`Success! We've received your message and will be in touch shortly`}
+          {`Επιτυχία! Λάβαμε το μήνυμά σας και θα επικοινωνήσουμε μαζί σας σύντομα.`}
         </div>
       ) : (
         <div className="flex justify-center">
