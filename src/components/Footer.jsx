@@ -13,8 +13,8 @@ function Footer() {
                 ENERGYM
               </p>
               <div className="flex flex-col gap-y-3">
-                <p>500 Terry Francine Street </p>
-                <p>San Francisco, CA 94158</p>
+                <p>Λ. ΕΙΡΗΝΗΣ 23</p>
+                <p>Préveza, Greece, 48100</p>
                 <p>info@mysite.com</p>
                 <p>42-456-7890</p>
                 <div className="flex justify-center lg:justify-start gap-x-4">
